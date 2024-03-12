@@ -1,0 +1,196 @@
+@import url(variables.css);
+
+:root {
+    --color-one: #FFFF;
+    --color-two: #F4F5FD;
+    --color-three: #1C1B1B;
+    --color-four: #EE4D4D;
+    --color-five: #C0C0C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+}
+
+body {
+    width: 100vw;
+}
+
+/*Header*/
+
+.header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-two);
+    background-color: var(--color-one);
+}
+.header img {
+    width: 2em;
+    margin-right: 13px;
+}
+.header p {
+    font-size: .8em;
+}
+
+/*Fin Header*/
+
+/*Nav*/
+.nav {
+    margin: 10px 20px 20px 20px;
+    height: 50px;
+    background-color: var(--color-two);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav>* {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: .8em;
+}
+
+.nav>* >a{
+    text-decoration: none;
+    font-family: "PlusJakartaSans-SemiBold";
+
+}
+
+
+.nav__item1 {
+    background-color: var(--color-three);
+}
+
+.nav__item1 a{
+    color: var(--color-one);
+}
+.nav__item2 a{
+    color: var(--color-three);
+}
+
+/*products*/
+.main__products{
+    margin: 1.5em 20px;
+}
+
+.products__item{
+    margin-top: 1em;
+}
+
+.item__title{
+    display: flex;
+}
+.item__title p{
+    background-color: var(--color-four);
+    color: var(--color-one);
+    border-radius: 10px;
+    padding: 8px;
+    font-size: .8em;
+}
+
+.item__content{
+    margin-top: 10px;
+    display: flex;
+    gap: 1em;
+}
+
+.content__img{
+    width: 40%;
+}
+.content__img img{
+    width: 100%;
+}
+
+.content__info{
+    width: 60%;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0 4px 0;
+    gap: 5px;
+}
+.content__info > *{
+    flex: 1;
+    width: 100%;
+}
+
+.info__name p{
+    font-family: "PlusJakartaSans-Medium";
+}
+
+.info__prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prices__price1{
+    font-family: "PlusJakartaSans-SemiBold";
+    font-size: .9rem;
+}
+.prices__price2{
+    color: #808080;
+    text-decoration:line-through;
+    font-size: .75rem;
+}
+
+.info__buttons{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.info__buttons > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    background-color: var(--color-one);
+    color: var(--color-five);
+    width: 30%;
+}
+
+.buttons__btn1{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid var(--color-two);
+    border-right: 0;
+    font-size: 1.5em;
+    flex: 1;
+}
+.buttons__btn2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid var(--color-two);
+    border-left : 0;
+    font-size: 1.5em;
+    flex: 1;
+}
+.info__buttons input{
+    border: 1px solid var(--color-two);
+    color: var(--color-two);
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    border-radius: 0;
+    font-size: 1.2em;
+    flex: 1.5;
+}
+
+.info__buttons input::placeholder{
+    color: var(--color-five);
+}
