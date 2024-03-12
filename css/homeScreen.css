@@ -1,0 +1,175 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    /* background: var(--color-primary); */
+}
+header{
+    width: 100%;
+    height: 5%;
+    padding: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 2;
+    
+    
+    
+}
+header div{
+    margin: 2%;
+}
+.header__logo{
+
+}
+.header__logo img{
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.buscar img{
+    width: 10vh;
+    
+}
+.promo{
+    position: absolute;
+    margin-top: 10vh;
+    margin: 5%;
+    width: 90%;
+    height: 18vh;
+}
+
+.promo img{
+    width: 100%;
+    height: 100%;
+}
+
+.icono__promo{
+    width: 100%;
+    height: 100%;
+}
+.categorias{
+    position: absolute;
+    margin-top: 22vh;
+    height: 2.5vh;
+    width: 11vh;
+    left: 2.5vh;
+}
+.categorias h3{
+    font-size: 5vw;
+    font-family: "PlusJakartaSans-Bold";
+
+}
+.categoria_1{
+    position: absolute;
+    height: 10vh;
+    width: 8vh;
+    margin-top: 26vh;
+    left: 3.5vh;
+}
+.telefono img{
+    width: 100%;
+    height: 100%;
+}
+.categoria_2{
+    position: absolute;
+    height: 10vh;
+    width: 8vh;
+    margin-top: 26vh;
+    left: 15vh;
+}
+.bolso img{
+    width: 100%;
+    height: 100%;
+}
+.categoria_3{
+    position: absolute;
+    height:10vh;
+    width: 8vh;
+    margin-top: 26vh;
+    left: 27vh;
+}
+.mueble img{
+    width: 100%;
+    height: 100%;
+}
+.categoria_4{
+    
+    position: absolute;
+    height: 10vh;
+    width: 8vh;
+    margin-top: 26vh;
+    left: 40vh;
+}
+.carro img{
+    width: 100%;
+    height: 100%;
+}
+.productos{
+
+    position: absolute;
+    margin-top: 34.5vh;
+    height: 2.5vh;
+    width: 30vh;
+    left: 2.5vh;
+}
+
+.productos h3{
+    font-size: 5vw;
+    font-family: "PlusJakartaSans-Bold";
+
+}
+
+.producto_1{
+    position: absolute;
+    width: 20vh;
+    margin-top: 39vh;
+    left: 2.5vh;
+}
+.zapato img{
+    width: 100%;
+    height: 100%;
+}
+
+.producto_2{
+    position: absolute;
+    width: 20vh;
+    height: 27.3vh;
+    margin-top: 39vh;
+    left: 28.5vh;
+}
+.gafas img{
+    width: 100%;
+    height: 100%;
+}
+
+.producto_3{
+    position: absolute;
+    width: 20vh;
+    margin-top: 70vh;
+    left: 2.5vh;
+}
+.audifonos img{
+    width: 100%;
+    height: 100%;
+}
+.producto_4{
+    position: absolute;
+    width: 20vh;
+    margin-top: 70vh;
+    left: 28.5vh;
+}
+.bolsa img{
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,138 @@
+@import url(variables.css);
+
+body{
+    bottom: 0;
+    
+}
+
+.color__fondo{
+    background: gray;
+    width: 104%;
+    height: 95vh;
+    margin-top: -1.5vh;
+    margin-left: -2%;
+    
+}
+
+main{   
+    width: 99.3%;
+    margin-left: -2%;
+    position: fixed;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    background: white;
+    border-width: 2px;
+    border-color: rgb(218, 218, 218);
+    border-style: solid;
+    border-bottom: 0;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+    z-index: 1;
+}
+
+.text__1{
+    display: flex;
+    /*background: red;*/
+    height: 5.5vh;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+.text__1 h3{
+    font-size: 110%;
+    font-family: "PlusJakartaSans-Medium";
+    text-transform: capitalize;
+}
+
+.text__2{
+    display: flex;
+    /*background: green;*/
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text__2 img{
+    width: 10%;
+    margin-right: 3%;
+}
+
+.text__2 h3{
+    font-size: 105%;
+    font-family: "PlusJakartaSans-Medium";
+}
+
+.text__3{
+    display: flex;
+    /*background: pink;*/
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text__3 img{
+    width: 10.5%;
+    margin-right: 3%;
+    margin-left: -0.3%;
+}
+
+.text__3 h3{
+    font-size: 105%;
+    font-family: "PlusJakartaSans-Medium";
+}
+
+.text__4{
+    display: flex;
+    /*background: yellow;*/
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text__4 img{
+    width: 10%;
+    margin-right: 3%;
+}
+
+.text__4 h3{
+    font-size: 105%;
+    font-family: "PlusJakartaSans-Medium";
+}
+
+.text__5{
+    display: flex;
+    /*background: purple;*/
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text__5 img{
+    width: 10%;
+    margin-right: 3%;
+}
+
+.text__5 h3{
+    font-size: 105%;
+    font-family: "PlusJakartaSans-Medium";
+}
+
+button{
+    display: flex;
+    background: black;
+    margin: 0 auto;
+    width: 85%;
+    height: 7.5vh;
+    border-radius: 2vh;
+    margin-top: 3vh;
+}
+
+button h3{
+    padding-top: 2vh;
+    margin: 0 auto;
+    font-family: "PlusJakartaSans-SemiBold";
+    text-transform: capitalize;
+    color: white;
+}

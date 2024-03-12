@@ -1,0 +1,433 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+    --color-secundary: rgb(87, 87, 87);
+    --color-terciary: rgb(76, 13, 202);
+    --color-cuarto: rgb(57, 169, 255);
+    --color-quinto: rgb(184, 184, 184);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    /*background: var(--color-primary);*/
+}
+
+.header{
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 3.5em;
+    box-shadow: 0px 0px 2px 1px rgb(209, 209, 209);
+    z-index: 5;
+}
+
+.header__1{
+    display: flex;
+    /*background: red;*/
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+.div__1,
+.div__2{
+    display: flex;
+}
+
+.div__1 img{
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.div__1 h4{
+    font-family: "PlusJakartaSans-Medium",;
+    font-size: 1em;
+    margin-top: 1.2em;
+    margin-left: 1em;
+    text-transform: capitalize;
+}
+
+.div__2{
+    width: 30%;
+}
+
+.div__2 img:first-child{
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    margin-right: 14px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.div__2 img:last-child{
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:.8fr repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr ;
+    grid-template-areas: 
+    ". . . ."
+    "reloj1 reloj1 reloj2 reloj2"
+    "reloj1 reloj1 reloj2 reloj2"
+    "reloj1 reloj1 reloj2 reloj2"
+    "colores1 colores1 colores2 colores2"
+    "texto1 texto1 texto2 texto2"
+    "reloj3 reloj3 reloj4 reloj4"
+    "reloj3 reloj3 reloj4 reloj4"
+    "reloj3 reloj3 reloj4 reloj4"
+    "colores3 colores3 colores4 colores4"
+    "texto3 texto3 texto4 texto4"
+    "reloj5 reloj5 reloj6 reloj6"
+    "reloj5 reloj5 reloj6 reloj6"
+    "reloj5 reloj5 reloj6 reloj6"
+    ". . . ."
+    ". . . ."
+    ;
+}
+
+.reloj__1{
+    /*background: red;*/
+    grid-area: reloj1;
+}
+
+.reloj__2{
+    /*background: blue;*/
+    grid-area: reloj2;
+}
+
+.reloj__3{
+    /*background: green;*/
+    grid-area: reloj3;
+}
+
+.reloj__4{
+    /*background: yellow;*/
+    grid-area: reloj4;
+}
+
+.reloj__5{
+    /*background: purple;*/
+    grid-area: reloj5;
+}
+
+.reloj__6{
+    /*background: orange;*/
+    grid-area: reloj6;
+}
+
+.reloj__1 img:first-child, .reloj__3 img:first-child, .reloj__5 img:first-child{
+    width: 98%;
+    height: 100%;
+    margin-top: 5vh;
+    margin-left: .5vh;
+}
+
+.reloj__2 img:first-child, .reloj__4 img:first-child, .reloj__6 img:first-child{
+    width: 98%;
+    height: 100%;
+    margin-top: 5vh;
+    margin-left: .5vh;
+}
+
+.reloj__1 img:last-child, .reloj__3 img:last-child, .reloj__5 img:last-child{
+    width: 12%;
+    position: relative;
+    top: -23vh;
+    left: 20vh;
+
+}
+
+.reloj__2 img:last-child, .reloj__4 img:last-child, .reloj__6 img:last-child{
+    width: 12%;
+    position: relative;
+    top: -23vh;
+    left: 20vh;
+}
+
+.colores__1,
+.colores__2,
+.colores__3,
+.colores__4,
+.colores__5,
+.colores__6{
+    position: relative;
+    /*background: red;*/
+    width: 110%;
+    height: 45%;
+    margin-left: 8%;
+    top: -50%;
+    position: relative;
+}
+
+.colores__1 small,
+.colores__2 small,
+.colores__3 small,
+.colores__4 small,
+.colores__5 small,
+.colores__6 small{
+    /*background: blue;*/
+    width: 8vh;
+    margin-left: 45%;
+    text-align: center;
+    font-size: 1.5vh;
+    font-family: "PlusJakartaSans-Regular";
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.circulo0101{
+    background: black;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
+    z-index: 3;
+}
+
+.circulo0102{
+    background: var(--color-secundary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
+    z-index: 2;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
+}
+
+.circulo0103{
+    background: var(--color-terciary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
+    z-index: 1;
+}
+
+.circulo0201{
+    background: black;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
+}
+
+.circulo0202{
+    background: var(--color-secundary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
+    z-index: 2;
+    
+}
+
+.circulo0203{
+    background: var(--color-quinto);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
+    z-index: 1;
+}
+
+.circulo0301{
+    background: black;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(57, 169, 255);
+}
+
+.circulo0302{
+    background: var(--color-secundary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
+    z-index: 2;
+}
+
+.circulo0303{
+    background: #EE4D4D;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
+    z-index: 1;
+}
+
+.circulo0401{
+    background: black;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
+}
+
+.circulo0402{
+    background: var(--color-secundary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
+    z-index: 2;
+    
+}
+
+.circulo0403{
+    background: #F0821D;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
+    z-index: 1;
+}
+
+.circulo0501{
+    background: var(--color-primary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
+}
+
+.circulo0502{
+    background: var(--color-terciary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
+    z-index: 2;
+    
+}
+
+.circulo0503{
+    background: green;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;;
+    height: 55%;
+    margin-left: 27.5%;
+    z-index: 1;
+}
+
+.circulo0601{
+    background: var(--color-secundary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
+    z-index: 2;
+}
+
+.circulo0602{
+    
+    background: var(--color-primary);
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
+}
+
+.circulo0603{
+    background: yellow;
+    position: absolute;
+    border-radius: 100%;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
+    z-index: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.texto__01,
+.texto__03,
+.texto__05{
+    /*background: red;*/
+    margin-top: -12.5vh;
+    margin-left: 4vh;
+}
+
+.texto__02,
+.texto__04,
+.texto__06{
+    /*background: red;*/
+    margin-top: -12.5vh;
+    margin-left: 13%;
+}
+
+.texto__01 h3, .texto__02 h3, .texto__03 h3, .texto__04 h3, .texto__05 h3, .texto__06 h3{
+    /*background: green;*/
+    font-size: 1.9vh;
+    font-family: "PlusJakartaSans-Medium";
+}
+
+.texto__01 h5, .texto__02 h5, .texto__03 h5, .texto__04 h5, .texto__05 h5, .texto__06 h5{
+    /*background: green;*/
+    font-size: 1.5vh;
+    font-family: "PlusJakartaSans-SemiBold";
+}
+
+.texto__01 small, .texto__02 small, .texto__03 small, .texto__04 small, .texto__05 small, .texto__06 small{
+    /*background: green;*/
+    font-size: 1.4vh;
+    font-family: "PlusJakartaSans-Regular";
+    color: grey;
+    text-decoration: line-through;
+    margin-top: 0vh;
+    position: absolute;
+}
+
