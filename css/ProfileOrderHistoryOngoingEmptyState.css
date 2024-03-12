@@ -1,0 +1,17 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+.prueba{
+    width: 100%;
+    height: 50px;
+    background: red;
+    display: relative;
+}
