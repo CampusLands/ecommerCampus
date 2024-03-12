@@ -1,0 +1,66 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+}
+body{
+    outline: 3px solid red;
+    height: 100vh;
+    width: 100%;
+}
+.main{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "carts"
+    "order";
+}
+
+.main_cart{
+    background: green;
+    grid-area: carts;
+}
+.cart{
+    display: flex;
+}
+.cart_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info_headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.headline_name{
+    display: flex;
+}
+.headline_discount{
+    display: flex;
+    flex-direction: column;
+}
+.info_quantity{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity_count{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_dad{
+    background: red;
+    grid-area: order;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
