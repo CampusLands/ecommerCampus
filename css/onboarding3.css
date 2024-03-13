@@ -27,6 +27,11 @@
     font-family: "PlusJakartaSans-Regular";
     background: var(--color-primary);
 }
+body{
+    padding-left: 1em;
+    padding-right: 1em;
+    background: var(--color-white);
+}
 main{
     /* 100% de lo que se le asigne en body "General" */
     height: 100%; 
@@ -46,6 +51,9 @@ main{
 
     display: flex;
     flex-direction: column;
+
+    background: var(--color-Cyan-50);
+    border-radius: 2em;
 }
 .o3_ilistracion img{
     object-fit: contain;
@@ -53,9 +61,14 @@ main{
 .o3_ilistracion img:first-child{
     height: 2em;
     align-self: start;
+
+    padding-left: 1.5em;
 }
 .o3_ilistracion img:last-child{
     flex-grow: 1;
+    width: 70%;
+
+    align-self: center;
 }
 .o3_Decsion{
     grid-area: desicion;
