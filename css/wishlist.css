@@ -1,0 +1,107 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+.body{
+    display: flex;
+}
+.header{
+    /* background: red; */
+    width: 100%;
+    display: flex;
+}
+
+.header h1{
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.boton i{
+    /* background: green; */
+    display: flex;
+    justify-content: flex-start; 
+    font-size: 3em;
+    margin: 15px;
+}
+.producto_1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items:center;
+    margin: 20px;
+}
+.producto_1 img{
+    /* background: red; */
+    width: 145px;
+}
+.producto_1 h2{
+    display: flex;
+    font-size: medium;
+    margin-left: 10px;
+}
+.producto_1 i{
+    display: flex;
+    justify-content: flex-end;
+}
+.producto_1 p{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.producto_1 small{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.producto_1 i{
+    color: red;
+    font-size: 2em;
+}
+.container{
+    margin-block-start: -25px;
+    margin-left: 10px;
+}
+.producto_2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 15px;
+}
+.producto_2 i{
+    display: flex;
+    justify-content: flex-end;
+}
+.producto_2 img{
+    /* /* background: red; */
+    width: 150px;
+}
+.producto_2 h3{
+    display: flex;
+    font-size: medium;
+    margin-left: 10px;
+}
+.producto_2 p{
+    margin-top: 10px;
+    font-size: small;
+    margin-left: 10px;
+}
+.producto_2 small{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.producto_2 i {
+    color: red;
+    font-size: 2em;
+}
+.container-2{
+    margin-block-start: -25px;
+    margin-left: 10px;
+    border: none;
+}
