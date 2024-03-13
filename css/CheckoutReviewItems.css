@@ -9,3 +9,71 @@
     font-family: "PlusJakartaSans-Regular";
     background: var(--color-primary);
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "item1 item1 item1"
+    "item2 item2 item2";
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.item_1, .item_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_1 {
+    grid-area: item1;
+    width: 85vw;
+}
+
+.item_2 {
+    grid-area: item2;
+    width: 85vw;
+}
+
+.penpic {
+    display: flex;
+    position: absolute;
+    margin-left: 12em;
+    margin-top: 0.3em;
+}
+
+.penpic i {
+    color: var(--color-secundary);
+    font-size: 1.5em;
+}
+
+.compradopicture img {
+    width: 8em;
+}
+
+.comprainfo {
+    width: 10em;
+    margin-left: 1em;
+}
+
+.compradooffer small {
+    color: var(--color-secundary);
+}
+
+.quitoradd {
+    color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+}
+
+.quitoradd {
+    margin-top: 0.5em;
+}
+
+
+
+.item_2 {
+    grid-area: item2
+}
