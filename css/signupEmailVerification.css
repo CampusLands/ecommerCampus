@@ -1,6 +1,39 @@
 @import url(variables.css);
 :root{
-    --color-primary:#fcfcfc;
+      /* Brand Color */
+
+  --color-Cyan:#21D4B4;
+
+  --color-Cyan-50:#F4FDFA;
+
+  --color-Black:#1C1B1B;
+
+  --color-white:#ffffff;
+
+  /* Grey */
+
+  --color-Crey-50:#F4F5FD;
+
+  --color-Crey-100:#C0C0C0;
+
+  --color-Crey-150:#6F7384;
+
+  /* General */
+
+  --color-Red:#EE4D4D;
+
+  --color-Cyan50:#F4FDFA;
+
+  --color-Blue:#1F88DA;
+
+  --color-Purple:#4F1FDA;
+
+  --color-Yellow:#EBEF14;
+
+  --color-Orange:#F0821D;
+
+  --color-Merigold:#FFCB45;
+
 }
 *{
     margin: 0;
@@ -9,3 +42,35 @@
     font-family: "PlusJakartaSans-Regular";
     background: var(--color-primary);
 }
+.body{
+    width: 100%;
+    height: 100vh;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr  3fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    ;
+}
+header{
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+}
+.nav{
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav__icon{
+    font-size: 1.5em;
+}
+main{
+    grid-area: main;
+}
+
+
