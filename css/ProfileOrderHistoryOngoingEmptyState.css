@@ -1,17 +1,139 @@
 @import url(variables.css);
 :root{
-    --color-primary:#fcfcfc;
+    /* --color-primary:#fcfcfc; */
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "PlusJakartaSans-Regular";
+    /* font-family: "PlusJakartaSans-Regular"; */
     background: var(--color-primary);
 }
-.prueba{
+/* .prueba{
     width: 100%;
     height: 50px;
     background: red;
     display: relative;
+} */
+
+.main{
+    padding: 0 0.8rem;
 }
+.header{
+    /* background: coral; */
+    height: 8.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.1em;
+    font-family: "PlusJakartaSans-Sans";
+    gap: 1.5em;
+}
+
+.header__principal{
+    /* background: red; */
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 14px;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* padding: 1.1em; */
+}
+.header i{
+    font-size: 25px;
+}
+.header__botones{
+    /* background: #F4F5FD; */
+    background: #F4F5FD;
+    /* padding-left: 1.1em;
+    padding-right: 1.1em; */
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1em;
+    font-weight: 500;
+}
+.header__botones div:first-child{
+    background: #1C1B1B;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 1em;
+    border-radius: 1em;
+    width: 50%;
+    text-align: center;
+    font-family: "PlusJakartaSans-Sans";
+}
+.header__botones div:nth-child(2){
+    /* background: #1C1B1B; */
+    color: #1C1B1B;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 1em;
+    border-radius: 1em;
+    width: 50%;
+    text-align: center;
+    font-family: "PlusJakartaSans-Sans";
+}
+
+.img{
+    /* background: coral; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+
+}
+
+.principal__card{
+    /* background: greenyellow; */
+    width: 100%;
+    height: 25em;
+    padding: 2.22em; /*alinear con el header*/
+    display: flex;
+    position: absolute;
+    /* font-family: "PlusJakartaSans-SemiBold" */
+    font-family: "PlusJakartaSans-Sans";
+    font-weight: 500;
+}
+
+.principal__card div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+.principal__card div h1{
+    color: #1C1B1B;
+    font-size: 25px;
+    font-family: "PlusJakartaSans-Bold";
+    
+}
+
+.principal__card div p{
+    font-family: "PlusJakartaSans-Regular";
+    color: #6F7384;
+    font-size: 15px;
+    padding: .28em; /*2.5 = 0.3 + 2.2*/
+
+}
+
+.principal__card div button{
+    background: #1C1B1B;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 100%;
+    height: 60px;
+    border-radius: 1em;
+    font-family: "PlusJakartaSans-Sans";
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+}
+
+
+
