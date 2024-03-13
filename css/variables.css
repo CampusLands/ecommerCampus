@@ -1,3 +1,8 @@
+:root{
+    --color-linea: #c4c1c1;
+    --color-ternary: #f7f2f2;
+}
+
 @font-face {
     font-family: "PlusJakartaSans-Bold";
     src: url(../storage/font/Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf);
