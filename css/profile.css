@@ -42,16 +42,111 @@ header {
 .logout i {
     font-size: 4.5vh;
 }
-
+a {
+    text-decoration: none;
+    color: var(--color-font);
+}
 main {
     position: relative;
-    height: 78vh;
+    height: 78dvh;
     margin: auto;
     bottom: 10px;
     width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    padding: 25px 15px;
+    overflow-y: scroll;
+    background: var(--color-principal);
+    text-transform: capitalize;
+    color: var(--color-font);
 }
+
+main > section > h5 {
+    color: var(--color-titulos);
+}
+main > section > article > a  section{
+    margin: 30px 0;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--color-separadores);
+}
+.opts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.opts > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.opts i, .switchBtn i {
+    font-size: 1.5em;
+}
+.switchBtn {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--color-separadores);
+}
+.switchBtn > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.switchBtn input {display:none;}
+.slide {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-font);
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #fff;
+}
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slide {
+    background-color: #8CE196;
+    padding-left: 40px;
+}
+input:focus + .slide {
+    box-shadow: 0 0 1px #01aeed;
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(20px);
+    right: -20px;
+}
+.slide.round {
+    border-radius: 34px;
+}
+.slide.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
 
 footer {
     width: 100%;
