@@ -28,8 +28,8 @@
     background: var(--color-primary);
 }
 body{
-    padding-left: 1em;
-    padding-right: 1em;
+    height: 100vh;
+    padding:1em;
     background: var(--color-white);
 }
 main{
