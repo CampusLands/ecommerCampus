@@ -1,0 +1,46 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    height: 5vh;
+}
+.SearchBar{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 1vh;
+}
+.SearchBar input{
+    outline: none;
+    padding: 1vh;
+}
+.searchInput{
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    display: flex;
+    padding: 1vh;
+    margin-top: 2vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main div{
+    display: flex;
+    justify-content: space-between;
+}
