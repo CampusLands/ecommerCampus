@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/wishlist.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_container_flecha">
+                <a href=""><i class='bx bx-arrow-back'></i></a>
+            </div>
+            <div class="header_container_titulo">
+                <p><strong>WishList</strong></p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="producto_1">
+            <div>
+                <img src="/storage/img/reloj.svg" alt="reloj">
+            </div>
+            <div>
+                <h2>Loop Silicone Strong Magnetic Watch</h2>
+                <p><strong>$15.25</strong></p>
+                <small> <strike>$20.00</strike></small>
+                <i class='bx bx-trash'></i>
+                <div class="container">
+                    <button onclick="document.getElementById('cantidad').stepDown()">-</button>
+                    <input type="number" id="cantidad" name="cantidad" min="0" max="100" step="1">
+                    <button onclick="document.getElementById('cantidad').stepUp()">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="producto_2">
+            <div>
+                <img src="/storage/img/Rectangle 13.svg" alt="reloj">
+            </div>
+            <div>
+                <h3>M6 Smart watch IP67 Waterproof</h3>
+                <p><strong>$12.00</strong></p>
+                <small><strike>$18.00</strike></small>
+                <i class='bx bx-trash'></i>
+                <div class="container-2">
+                    <button onclick="document.getElementById('contain').stepDown()">-</button>
+                    <input type="number" id="contain" name="contain" min="0" max="100" step="1">
+                    <button onclick="document.getElementById('contain').stepUp()">+</button>
+                </div>
+            </div>
+        </div>     
+    </section>
+    <footer class="footer_main">
+        <nav class="footer_content">
+            <div class="icon">
+                <img src="/storage/img/home-2.svg" alt="home">
+                <span>Home</span>
+            </div>
+            <div class="icon">
+                <img src="/storage/img/category-2.svg" alt="home">
+                <span>Categories</span>
+            </div>
+            <div class="icon">
+                <img src="/storage/img/shopping-cart.svg" alt="home">
+                <span>My Cart</span>
+            </div>
+            <div class="icon">
+                <img src="/storage/img/heart.svg" alt="home">
+                <span>WishList</span>
+            </div>
+            <div class="icon">
+                <img src="/storage/img/profile.svg" alt="home">
+                <span>Profile</span>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
