@@ -18,12 +18,12 @@ body{
 }
 
 
-.main{
+.mainorder{
     width: 100%;
     padding: 15px;
 }
 
-.main__img{
+.mainorder__img{
     width: 100%;
     background-color: var(--color-secundary);
     height: 60vh;
@@ -34,18 +34,18 @@ body{
     margin-bottom: 15px;
 }
 
-.main__img img{
+.mainorder__img img{
     width: 70%;
 }
 
-.main__p{
+.mainorder__p{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main__p p:nth-child(1){
+.mainorder__p p:nth-child(1){
     margin: 15px;
     font-size: 6.5vw;
     text-align: center;
@@ -53,14 +53,14 @@ body{
     width: 70%;
 }
 
-.main__p p:nth-child(2){
+.mainorder__p p:nth-child(2){
     text-align: center;
     color: var(--color-font-secundary);
     font-size: 3.7vw;
     padding: 15px;
 }
 
-.main button{
+.mainorder button{
     margin-top: 15px;
     width: 100%;
     background: var(--color-ternary);
