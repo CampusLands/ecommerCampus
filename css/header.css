@@ -1,0 +1,48 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+
+body {
+    font-family: "PlusJakartaSans-Regular";
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e4e0e0a2;
+}
+
+.header_container_flecha a i {
+    font-size: 30px;
+    padding-right: 10px;
+    color: black;
+}
+.header_container_titulo {
+    font-size: 1.3em;
+}
+.header_container_pag {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header_container_pag .pag_actual {
+    font-size: 1em;
+}
+
+.header_container_pag .pag_siguiente {
+    font-size: 1em;
+    color: #C0C0C0;
+}
