@@ -12,29 +12,58 @@
     <div class="section1">
         <div class="iconsSection1">
             <div class="icon1">
-                <img src="./storage/img/box.png" alt="" class="section1Icons">
+                <img src="/storage/img/box.png" alt="" class="section1Icons">
                 <p class="cnt1">Shipping</p>
             </div>
             <div class="line"></div>
             <div class="icon2">
-                <img src="./storage/img/card-tick.png" alt="" class="section1Icons">
+                <img src="/storage/img/card-tick.png" alt="" class="section1Icons">
                     <p class="cnt1">Payment</p>
             </div>
             <div class="line"></div>  
             <div class="icon3">
-                <img src="./storage/img/clipboard-tick.png" alt="" class="section1Icons">
+                <img src="/storage/img/clipboard-tick.png" alt="" class="section1Icons">
                     <p class="cnt1">Review</p>  
             </div>
         </div>
     </div>
-    <div class="inputName">
-        <form>
-            <label for="nombre">Full Name *</label>
+    <nav class="section2">
+        <div class="inputName">
+            <form>
+                <label for="nombre">Full Name *</label>
                 <div class="input">
                     <input type="text" id="nombre" name="nombre" placeholder="Enter full name">
                 </div>
-          </form>
-    </div>
-    
+            </form>
+        </div>
+        <div class="phoneNumber">
+            <form>
+                <label for="numero">Phone Number *</label>
+                <div class="containerPhone">
+                    <div class="inputPhone">
+                        <select id="pais" name="pais">
+                            <option value="AR">Arg</option>
+                            <option value="BR">Bra</option>
+                            <option value="CL">Chil</option>
+                            <input type="text" class="Number" id="numero" name="numero" placeholder="+54">
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="inputProvidence">
+            <form>
+                <div class="containerPhone">
+                    <div class="inputPhone">
+                        <select id="pais" name="pais" placeholder="">
+                            <option value="AR">Arg</option>
+                            <option value="BR">Bra</option>
+                            <option value="CL">Chil</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
