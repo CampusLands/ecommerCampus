@@ -75,4 +75,49 @@ main{
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+}
+.o3_Decsion h1{
+    /* width: 60%; */
+    color: var(--color-Black);
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.o3_Decsion p{
+    color: var(--color-Crey-150);
+    text-align: center;
+    font-size: 14px;
+    font-weight: regular;
+    letter-spacing: 0.5%;
+}
+.o3_Decsion_boton{
+    width: 100%;
+
+    display: flex;
+    gap: 1em;
+}
+button{
+    width: 50%;
+    height: 4em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    border: 1px solid ;
+    border-radius: 1em;
+    
+    color: var(--color-Black);
+    background: var(--color-white);
+    border-color: var(--color-Crey-50);
+}
+button:hover{
+    color: var(--color-white);
+    background: var(--color-Black);
+    border-color: var(--color-white);
+
 }
