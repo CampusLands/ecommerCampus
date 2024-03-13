@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout-Payment</title>
+    <link rel="stylesheet" href="../css/checkout-Payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header></header>
+    <main class="checkout">
+        <section class="checkout__envio">
+                <div class="envio__shipping">
+                    <i class='bx bxs-package'></i>
+                    <p>Shipping</p>
+                </div>
+                <div class="line"></div>
+                <div class="envio__payment">
+                    <i class='bx bxs-credit-card'></i>
+                    <p>Payment</p>
+                </div>
+                <div class="line"></div>  
+                <div class="envio__review">
+                    <i class='bx bx-list-check' ></i>
+                    <p>Review</p>  
+                </div>
+        </section>
+        <section class="pay">
+            <div class="pay__paypal">
+                <img src="../storage/img/payPal.png" alt="">
+            </div>
+            <div class="pay__gpay">
+                <img src="../storage/img/gPay.png" alt="">
+            </div>
+        </section>
+        <section class="card">
+            <div class="card__name">
+                <p>Card Holder Name*</p>
+                <input type="text" placeholder="Enter card holder name">
+            </div>
+            <div class="card__number">
+                <p>Card Number*</p>
+                <input type="number" placeholder="4111 1111 1111 1111">
+            </div>
+            <div class="card__etc">
+                <p>Expiration*</p>
+                <p>CVV*</p>
+                <input type="date" placeholder="MM/YY">
+                <input type="number" placeholder="123">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

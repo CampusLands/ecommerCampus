@@ -1,0 +1,87 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+    --color-secundary: #21D4B4;
+    --color-ternary: #6F7384;
+    --color-quaternary: #F4FDFA;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+body{
+    width: 100vw;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.checkout{
+    width: 100%;
+}
+
+.checkout__envio{
+    width: 100%;
+}
+
+.checkout__envio i{
+    font-size: 9vw;
+}
+
+.checkout__envio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.envio__shipping, .envio__payment, .envio__review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    width: 12%;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.envio__shipping{
+    color: var(--color-secundary);
+}
+
+.envio__review{
+    color: var(--color-ternary);
+}
+
+.pay{
+    display: flex;
+    justify-content: center;
+}
+
+.pay > div{
+    width: 40%;
+    background-color: var(--color-quaternary);
+    margin: 2vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+    margin: 9vw 1.5vw;
+    background-color: var(--color-quaternary);
+    border-radius: 2vw;
+}
+
+.pay__paypal img, .pay__gpay img{
+    width: 60%;
+    background-color: var(--color-quaternary);
+}
+
+.card__name{
+    display: flex;
+}
