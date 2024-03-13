@@ -1,16 +1,13 @@
 @import url(variables.css);
-:root{
-    --color-primary:#fcfcfc;
-}
+@import url(variables2.css);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-   
 }
 body{
-    margin: 10px;
     padding: 10px;
     width: 100%;
     height: 100vh;
@@ -25,7 +22,8 @@ body{
 }
 .header_logo h1{
     font-family: "PlusJakartaSans-ExtraBold";
-    font-size: 21px;
+    font-size: 17px;
+    margin-top: 5px;
 }
 .header_logo h1 img{
     width: 30px;
@@ -36,163 +34,146 @@ body{
 
 
 .main_login{
-    margin-top: 20px;
+  margin-top: 20px;
+  height: 65px;
 }
+.main_login h2{
+  font-family: "PlusJakartaSans-Bold";
+}
+.main_login small{
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-Crey-150);
+}
+.main_login small a{
+  color: var(--color-Cyan);
+}
+
 .form-container{
-    margin-top: 40px;
+    margin-top: 30px;
 }
-.form-container button:active {
-    scale: 0.95;
-  }
-  
-  .form-container .logo-container {
-    margin-bottom: 12px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-  }
-  
-  .form-container .social-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-  
-  .form-container .social-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: inherit;
-    color: #fff;
-    border: none;
-    padding: 12px 16px;
-    gap: 8px;
-    cursor: pointer;
-    border-radius: 6px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
-  }
-  
-  .form-container .social-button svg {
-    width: 22px;
-    height: 22px;
-    fill: white;
-  }
-  
-  .form-container .social-button.facebook {
-    background-color: #1778f2;
-  }
-  
-  .form-container .social-button.apple {
-    background-color: #212121;
-  }
-  
   .form-container .form {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-  
   .form-container .form-group {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
-  
   .form-container .form-group label {
     display: block;
     margin-bottom: 5px;
+    font-family: "PlusJakartaSans-Medium";
   }
-  
-  .form-container .form-group input[type="text"],
+  .password-input-container input[type="password"],
+  .form-container .form-group input[type="email"], 
   .form-container .form-group input[type="password"] {
     width: 100%;
     padding: 12px 16px;
     border-radius: 6px;
-    font-family: inherit;
-    border: 1px solid #ccc;
+    font-family: "PlusJakartaSans-Regular";
+    border: 1px solid var(--color-Crey-50);
   }
   
   .form-container .form-group input::placeholder {
     opacity: 0.5;
   }
-  
-  .form-container .form-group input[type="text"]:focus,
+  .form-container .form-group input[type="email"]:focus, 
   .form-container .form-group input[type="password"]:focus {
     outline: none;
-    border-color: cyan;
+    border-color: var(--color-Cyan);
   }
   
-  .form-container .form-submit-btn {
+  .password-input-container {
+    position: relative;
+  }
+  
+  /* .password-input-container input[type="password"] {
+    padding-right: 40px;
+  } */
+  
+  .password-input-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* .password-input-container .toggle-password i {
+    color: #999;
+  }
+  
+  .password-input-container .toggle-password i:hover {
+    color: #333;
+  }
+   */
+  
+  .form-container .form-submit-btn,
+  .form-container .form-submit-btnb{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: inherit;
-    color: #fff;
-    background-color: #212121;
+    color: var(--color-Black);
+    background: var(--color-white);
     border: none;
     width: 100%;
     height: 50px;
-    padding: 12px 16px;
+    padding: 25px;
     font-size: inherit;
     cursor: pointer;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-Crey-100);
   }
-  
+  .form-container .form-submit-btn{
+    margin-top: 5px;
+  }
+  .form-container .form-submit-btnb:hover,
   .form-container .form-submit-btn:hover {
-    background-color: #313131;
+    background-color: var(--color-Black);
+    color: var(--color-white);
   }
-  
   .form-container .link {
-    color: cyan;
+    color: var(--color-Cyan);
     text-decoration: none;
   }
-  
   .form-container .forgot-password-link {
     align-self: flex-end;
     margin-top: 10px;
+    font-family: "PlusJakartaSans-Medium";
   }  
   .form-container .link:hover {
-    text-decoration: underline;
-  }
-  .form-container .line {
-    width: 100%;
-    height: 1px;
-    background-color: #212121;
-    opacity: 0.1;
-  }
-  .form-container .form-submit-btnb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: inherit;
-    color: black;
-    background: white;
-    border: none;
-    width: 100%;
-    height: 50px;
-    padding: 12px 16px;
-    font-size: inherit;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168); */
-  }
-
-
-
-  .footer_conditions .terms_link {
-    align-self: center;
-    font-weight: 500;
-    
-  }
-  
-  .footer_conditions .terms_link .link {
-    font-weight: 400;
     text-decoration: none;
-    color: blue;
   }
+.bxl-google{
+  color: var(--color-Cyan);
+  margin-left: 5px;
+  font-size: 2em;
+}
+
+
+
+
+footer{
+  margin-top: 20%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 10vh;
+  /* background: red; */
+}
+footer p{
+  /* background: yellow; */
+  font-size: 0.8em; 
+  width: 100%;
+}
+.link {
+  text-decoration: none;
+  color: var(--color-Blue);
+}
