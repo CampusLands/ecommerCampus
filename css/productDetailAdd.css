@@ -1,0 +1,144 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+    --color-blue: #1F8BDA;
+    --color-green: #08E488; 
+    --color-grey: #6F7384;          
+    --color-golden: #DFB300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "fondo fondo fondo fondo"
+    "detalles detalles detalles detalles"
+    "colores colores colores colores"
+    "botones botones botones botones"
+    ;
+}
+
+.product_img{
+    grid-area: fondo;
+}
+
+.product_img img{
+    width: 100%;
+}
+
+.product_Detail{
+    margin-top: -100px;
+    grid-area: detalles;
+    background: var(--color-primary);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.product_Detail .product_labels{
+    background: none;
+    margin-top: 3%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+}
+
+.product_Detail .product_labels h3{
+    font-family: "PlusJakartaSans-SemiBold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    width: 40%;
+    font-size: 1.4em;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.product_labels h3:first-child{
+    background: var(--color-blue);
+}
+
+.product_labels h3:last-child{
+    background: var(--color-green);
+}
+
+.product_Detail .product_name_and_price{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: 1%;
+    margin-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product_name_and_price .name{
+    width: 70%;
+    font-size: 2em;
+}
+
+.product_name_and_price .price{
+    width: 20%;
+    font-size: 1.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product_name_and_price .price h3{
+    color: var(--color-grey);
+}
+
+.rating{
+    display: flex;
+    margin-top: 13.6%;
+    margin-left: 23px;
+}
+
+.rating .star{
+    color: var(--color-golden);
+    font-size: 1.8em;
+}
+
+.rating .reviews{
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+}
+
+.product_description{
+    margin-top: -1%;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.product_description .description_1, .description_2, .description_3{
+    width: 100%;
+    margin-top: 2.6%;
+    color: var(--color-grey);
+    font-size: 1.8em;
+}
+
+
+.product_Colors_Quantity{
+    grid-area: colores;
+}
+
+.Buttons{
+    grid-area: botones;
+}
