@@ -24,15 +24,38 @@ header {
 .user {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 .user > article h3 {
     text-transform: capitalize;
     font-weight: bolder;
+    font-size: 2.4vh;
 
 }
 .user > article p {
     font-weight: 550;
+    font-size: 1.7vh;
+}
+.user_img img {
+    width: 6vh;
 }
 .logout i {
-    font-size: 2.3em;
+    font-size: 4.5vh;
+}
+
+main {
+    position: relative;
+    height: 78vh;
+    margin: auto;
+    bottom: 10px;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
 }
