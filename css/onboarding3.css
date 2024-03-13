@@ -1,6 +1,24 @@
 @import url(variables.css);
 :root{
-    --color-primary:#fcfcfc;
+    /* Brand Color */
+    --color-Cyan:#21D4B4;
+    --color-Cyan-50:#F4FDFA;
+    --color-Black:#1C1B1B;
+    --color-white:#ffffff;
+    /* Grey */
+    --color-Crey-50:#F4F5FD;
+    --color-Crey-100:#C0C0C0;
+    --color-Crey-150:#6F7384;
+    /* General */
+    --color-Red:#EE4D4D;
+    --color-Cyan50:#F4FDFA;
+    --color-Blue:#1F88DA;
+    --color-Purple:#4F1FDA;
+    --color-Yellow:#EBEF14;
+    --color-Orange:#F0821D;
+    --color-Merigold:#FFCB45;
+    --color-Brown:#5A1A05;
+    --color-Pink:#CE1DEB;
 }
 *{
     margin: 0;
@@ -10,6 +28,38 @@
     background: var(--color-primary);
 }
 main{
+    /* 100% de lo que se le asigne en body "General" */
+    height: 100%; 
+
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "ilustra"
+    "ilustra"
+    "ilustra"
+    "desicion"
+    "desicion"
+    ;
+}
+.o3_ilistracion{
+    grid-area: ilustra;
+
+    display: flex;
+    flex-direction: column;
+}
+.o3_ilistracion img{
+    object-fit: contain;
+}
+.o3_ilistracion img:first-child{
+    height: 2em;
+    align-self: start;
+}
+.o3_ilistracion img:last-child{
+    flex-grow: 1;
+}
+.o3_Decsion{
+    grid-area: desicion;
+
+    display: flex;
+    flex-direction: column;
 }
