@@ -1,0 +1,152 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    /*background: var(--color-primary);*/
+}
+
+.header{
+    /*background: blue;*/
+    position: relative;
+    width: 100%;
+    height: 3.5em;
+    box-shadow: 0px 0px 2px 1px rgb(209, 209, 209);
+}
+
+.header__1{
+    display: flex;
+    /*background: red;*/
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+.div__1,
+.div__2{
+    display: flex;
+}
+
+.div__1 img{
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.div__1 h4{
+    font-family: "PlusJakartaSans-Medium",;
+    font-size: 15px;
+    margin-top: 18px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.div__2{
+    width: 30%;
+}
+
+.div__2 img:first-child{
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    margin-right: 14px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.div__2 img:last-child{
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr ;
+    grid-template-areas: 
+    "reloj1 reloj1 reloj2 reloj2"
+    "reloj1 reloj1 reloj2 reloj2"
+    "reloj1 reloj1 reloj2 reloj2"
+    ". . . ."
+    ". . . ."
+    "reloj3 reloj3 reloj4 reloj4"
+    "reloj3 reloj3 reloj4 reloj4"
+    "reloj3 reloj3 reloj4 reloj4"
+    ". . . ."
+    ". . . ."
+    "reloj5 reloj5 reloj6 reloj6"
+    "reloj5 reloj5 reloj6 reloj6"
+    "reloj5 reloj5 reloj6 reloj6"
+    ". . . ."
+    ". . . ."
+    ;
+}
+
+.reloj__1{
+    /*background: red;*/
+    grid-area: reloj1;
+}
+
+.reloj__2{
+    /*background: blue;*/
+    grid-area: reloj2;
+}
+
+.reloj__3{
+    /*background: green;*/
+    grid-area: reloj3;
+}
+
+.reloj__4{
+    /*background: yellow;*/
+    grid-area: reloj4;
+}
+
+.reloj__5{
+    /*background: purple;*/
+    grid-area: reloj5;
+}
+
+.reloj__6{
+    /*background: orange;*/
+    grid-area: reloj6;
+}
+
+.reloj__1 img:first-child, .reloj__3 img:first-child, .reloj__5 img:first-child{
+    width: 98%;
+    height: 98%;
+    margin-top: 18px;
+    margin-left: 4px;
+}
+
+.reloj__2 img:first-child, .reloj__4 img:first-child, .reloj__6 img:first-child{
+    width: 98%;
+    height: 98%;
+    margin-top: 18px;
+    margin-left: 0px;
+}
+
+.reloj__1 img:last-child, .reloj__3 img:last-child, .reloj__5 img:last-child{
+    width: 25px;
+    position: relative;
+    top: -172px;
+    left: 156px;
+
+}
+
+.reloj__2 img:last-child, .reloj__4 img:last-child, .reloj__6 img:last-child{
+    width: 25px;
+    position: relative;
+    top: -172px;
+    left: 156px;
+
+}
