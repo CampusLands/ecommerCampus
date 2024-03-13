@@ -1,0 +1,105 @@
+@import url(variables.css);
+:root{
+    --color-primary: #fff;
+    --color-title: #1c1b1b;
+    --color-ternary: #21d4b4;
+    --color-p: #6f7384;
+    --radius:  12px;
+    --color-white: #f4fdfa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+
+.main {
+    padding:1rem;
+    text-align: center;
+}
+
+.main__img {
+    position: relative;
+    height: 51vh;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    width: 100%;
+}
+
+.main__img img{
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
+    background-color: transparent;
+}
+
+.main__icons {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+.main__icons i {
+    font-size: 2rem;
+}
+.main__icons span {
+    color: var(--color-ternary);
+}
+
+.main__title {
+    color: var(--color-title);
+    line-height: 120%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "PlusJakartaSans-Bold";
+}
+
+.main__text {
+    font-size: 0.825rem;
+    color: var(--color-p);
+    margin-block: 3rem;
+    line-height: 150%;
+    font-family: "PlusJakartaSans-Regular";
+}
+
+.main__btn {
+    background-color: var(--color-title);
+    color: var(--color-white);
+    display: block;
+    padding-block: 1.5rem;
+    font-size: 0.825rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+}
+
+.main__btns {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.main__btns span{
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-p);
+    border-radius: 50%;
+}
+
+.main__btns span:nth-child(2){
+    background-color: var(--color-ternary);
+}
