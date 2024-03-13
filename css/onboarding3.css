@@ -11,7 +11,7 @@
     --color-Crey-150:#6F7384;
     /* General */
     --color-Red:#EE4D4D;
-    --color-Cyan50:#F4FDFA;
+    --color-Green:#08E488;
     --color-Blue:#1F88DA;
     --color-Purple:#4F1FDA;
     --color-Yellow:#EBEF14;
@@ -119,5 +119,19 @@ button:hover{
     color: var(--color-white);
     background: var(--color-Black);
     border-color: var(--color-white);
-
+}
+.o3_Decsion_puntos{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 1em;
+}
+.o3_Decsion_puntos span{
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-Crey-100);
+    border-radius: 50%;
+}
+.o3_Decsion_puntos span:last-child{
+    background-color: var(--color-Green);
 }
