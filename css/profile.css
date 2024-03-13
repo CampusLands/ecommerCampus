@@ -1,11 +1,15 @@
 @import url(variables.css);
 :root{
-    --color-primary:#fcfcfc;
+    --color-header: #21D4B4;
+    --color-titulos: #1C1B1B;
+    --color-font: #6F7384;
+    --color-principal: #FFFFFF;
+    --color-separadores: #F4F5FD;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    background: var(--color-primary);
+    background: var(--color-principal);
 }
