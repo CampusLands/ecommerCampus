@@ -1,0 +1,99 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    /* background: var(--color-primary); */
+}
+header{
+    width: 100%;
+    height: 5%;
+    padding: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 2;
+    background: red;
+    
+    
+    
+}
+header div{
+    margin: 2%;
+}
+.header__logo{
+
+}
+.header__logo img{
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.buscar img{
+    width: 10vh;
+    
+}
+.promo{
+    background: red;
+    position: absolute;
+    margin-top: 10vh;
+    margin: 5%;
+    width: 90%;
+    height: 18vh;
+}
+
+.promo img{
+    width: 100%;
+    height: 100%;
+}
+
+.icono__promo{
+    background: blue;
+    width: 100%;
+    height: 100%;
+}
+.categorias{
+    background: blue;
+    position: absolute;
+    margin-top: 23vh;
+    height: 2.5vh;
+    width: 11vh;
+    left: 2.5vh;
+}
+.categorias ol{
+    font-size: 4vw;
+    
+}
+.categoria_1{
+    background: darkblue;
+    position: absolute;
+    height: 5vh;
+    width: 5.5vh;
+    margin-top: 27vh;
+    left: 3.5vh;
+}
+.telefono img{
+    width: 100%;
+    height: 100%;
+}
+.categoria_2{
+    background:gold;
+    position: absolute;
+    height: 5vh;
+    width: 5.5vh;
+    margin-top: 27vh;
+    left: 15vh;
+}
+.bolso img{
+    width: 100%;
+    height: 100%;
+}
+
