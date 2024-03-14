@@ -1,13 +1,11 @@
 @import url(variables.css);
-:root{
-    --color-primary:#fcfcfc;
-}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
 }
 
 .container{
@@ -15,7 +13,7 @@
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(12,1fr);
-    grid-gap:1px 1px;
+
     grid-template-areas:
     
    
@@ -36,14 +34,13 @@
     width: 100%;
     height: 100%;
     margin:15px auto;
-    background: var(--color-primary);
+    background: var(--color-azul);
     position: fixed;
+    background-color: var(--color-white);
 }
 
 
 .container__logo{
-    
-    
     grid-area: sup;
     display: flex;
     flex-direction: row;
@@ -52,20 +49,26 @@
     justify-content: space-between;
     padding-right: 15px;
     padding-left: 15px;
+    background: var(--color-crey-150)
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    
+    
 }
 
 .container__logo img{
    position: relative;
    height: 100px;
    width: 100px;
-
+   
+   
 }
 
 .container__logo h2{
     display: flex;
     font-size: 0.875em;
     font-family: "PlusJakartaSans-Regular";
-    color: var(--color-cyan);
+    color: var(--color-Cyan);
     align-items: center;
 }
 
@@ -82,9 +85,9 @@
     width: 90%;
     font-family: "PlusJakartaSans-Regular";
     font-size: 0.875em;
-    color: var(--color-grey);
+    color: var(--color-crey-150);
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 25px;
     
     
 }
@@ -98,11 +101,23 @@
 }
 
 .container__pic{
-    
+    display: flex;
     grid-area: img;
     background-image: url(../storage/img/shopping.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background: var(--color-crey-150)
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width:100%;
+}
+
+.container__pic img{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
 
 .container__title{
@@ -116,28 +131,27 @@
     justify-content: center;
     align-items: center;
     border: none;
-   
     grid-area: boton;
-    color: #fcfcfc;
+    
 
 }
 .container__but button  {
-    color: #fcfcfc;
-    width: 85%;
-    height: 40%;
-    background-color: var(--color-black);
-    border-radius: 10px;;
    
-    font-size: 0.875em;
+    width: 85%;
+    height: 45%;
+    background-color: var(--color-Black);
+    border-radius: 10px;;
+    font-size: 1em;
     
 
 }
 
 .container__but button a {
     text-decoration: none;
-    background: var(--color-black);
-    color: #fcfcfc;
-    font-family: "PlusJakartaSans-Bold";
+    color: var(--color-white);
+    background: var(--color-Black);
+    font-family: "PlusJakartaSans-SemiBold";
+    
 
 
 }
