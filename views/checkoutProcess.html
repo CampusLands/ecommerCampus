@@ -8,7 +8,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="header_container">
+            <div class="header_container_flecha">
+                <a href=""><i class='bx bx-arrow-back'></i></a>
+            </div>
+            <div class="header_container_titulo">
+                <p>Checkout</p>
+            </div>
+        </div>
+    </header>
     <section class="screenCheckout">
 
         <div class="section1">
@@ -43,12 +52,10 @@
                     <label for="numero">Phone Number <span class="color-acento">*</span></label>
                     <div class="containerPhone">
                         <div class="inputPhone">
-                            <select id="pais" name="pais">
-                                <option value="AR">Arg</option>
-                                <option value="BR">Bra</option>
-                                <option value="CL">Chil</option>
-                                <input type="text" class="Number" id="numero" name="numero" placeholder="+54">
-                            </select>
+                            <form>
+                                    <img src="/storage/img/cap2.png" alt="" class="country">
+                                    <input type="text" class="Number" id="numero" name="numero" placeholder="+54">
+                            </form>
                         </div>
                     </form>
                 </div>
@@ -97,7 +104,9 @@
                 </div>
             </form>
         </div>
+    <section class="save">
         <button> Save  </button>
+    </section>    
     </nav>
 </section>
     
