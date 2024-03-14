@@ -12,25 +12,25 @@
 .body{
     display: flex;
 }
-.header{
-    /* background: red; */
+/*.header{
+    background: red; 
     width: 100%;
     display: flex;
 }
 
 .header h1{
-    /* background: blue; */
+    background: blue;
     display: flex;
     align-items: center;
     margin: 15px;
 }
 .boton i{
-    /* background: green; */
+    background: green;
     display: flex;
     justify-content: flex-start; 
     font-size: 3em;
     margin: 15px;
-}
+}*/
 .producto_1{
     display: flex;
     flex-wrap: nowrap;
@@ -65,8 +65,28 @@
     font-size: 2em;
 }
 .container{
+    display: flex;
     margin-block-start: -25px;
     margin-left: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    width: 50%;
+    border-radius: 8px;
+    height: 5vh;
+    justify-content: center;
+   
+}
+.container button{
+    font-size: 200%;
+    border: none;
+    height: 10%;
+    margin: -10% auto 5% auto;
+    color: rgba(128, 128, 128, 0.295);;
+}
+.container input{
+    font-size: 120%;
+    text-align: center;
+    border: none;
+    color: rgba(128, 128, 128, 0.295);
 }
 .producto_2{
     display: flex;
@@ -101,7 +121,26 @@
     font-size: 2em;
 }
 .container-2{
+    display: flex;
     margin-block-start: -25px;
     margin-left: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    width: 50%;
+    border-radius: 8px;
+    height: 5vh;
+    justify-content: center;
+   
+}
+.container-2 input{
+    font-size: 120%; color: rgba(128, 128, 128, 0.295);
+    text-align: center;
     border: none;
+
+}
+.container-2 button{
+    font-size: 200%;
+    border: none;
+    height: 10%;
+    margin: -10% auto 5% auto;
+    color: rgba(128, 128, 128, 0.295);
 }
