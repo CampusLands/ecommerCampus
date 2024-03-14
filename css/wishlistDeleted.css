@@ -25,24 +25,35 @@
 .alert p{
     font-size: 2vh;
     margin: 5%;
-    margin-top: 10%;
+    margin-top: 4vh;
+    margin-bottom: 30px;
 }
 .alert button{
     font-size: 1.5vh;
     border-style: none;
     width: 90%;
-    margin: 5%;
-    margin-top: 0;
 }
 .delete{
+    width: 325px;
+    padding: 25px 15px;
     border-radius: 15px;
-    background-color: black;
-    color: white;
-    height: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    border: none;
+    background:  #1c1b1b;
+    color: var(--color-primary);
+    font-family: "PlusJakartaSans-SemiBold";
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .cancel{
     background: none;
-    height: 24%;
+    position: absolute;
+    margin: 5%;
+    margin-top: 3vh;
 }
 .opacity{
     position: absolute;
@@ -52,4 +63,9 @@
     height: 100%;
     background-color: rgba( 0, 0, 0, 0.6);
     z-index: 11;
+}
+.fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
