@@ -159,6 +159,7 @@ main{
     display: flex;
     border: none;
     background-color: var(--color-Cyan-50);
+    color: var(--color-Black);
     border-radius: 5px;
     justify-content: center;
     align-items: center;
