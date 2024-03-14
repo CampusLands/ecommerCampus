@@ -54,3 +54,9 @@
     font-family: "PlusJakartaSans-SemiBoldItalic";
     src: url(../storage/font/Plus_Jakarta_Sans/PlusJakartaSans-SemiBoldItalic.ttf);
 }
+
+:root{
+--color-cyan:#21D4B4;
+--color-black:#1C1B1B;
+--color-grey: #6F7384;
+}

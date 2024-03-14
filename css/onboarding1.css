@@ -18,13 +18,14 @@
     grid-gap:1px 1px;
     grid-template-areas:
     
-    "vacio vacio vacio vacio"
+   
     "sup sup sup sup"
     "img img img img"
     "img img img img"
     "img img img img"
     "img img img img"
     "img img img img"
+    "titulo titulo titulo titulo"
     "titulo titulo titulo titulo"
     "titulo titulo titulo titulo"
     "boton boton boton boton"
@@ -39,15 +40,10 @@
     position: fixed;
 }
 
-.container__empty{
-    background-color: grey;
-    grid-area: vacio;
 
-
-}
 .container__logo{
     
-    background-color: red;
+    
     grid-area: sup;
     display: flex;
     flex-direction: row;
@@ -60,19 +56,49 @@
 
 .container__logo img{
    position: relative;
-   height: 35px;
+   height: 100px;
    width: 100px;
 
 }
 
+.container__logo h2{
+    display: flex;
+    font-size: 0.875em;
+    font-family: "PlusJakartaSans-Regular";
+    color: var(--color-cyan);
+    align-items: center;
+}
+
+.container__title {
+    display: flex;
+    font-family: "PlusJakartaSans-Bold";
+    flex-direction: column;
+    gap:12px;
+    padding: 20px;
+}
+
+.container__title p {
+    display: flex;
+    width: 90%;
+    font-family: "PlusJakartaSans-Regular";
+    font-size: 0.875em;
+    color: var(--color-grey);
+    justify-content: center;
+    margin-left: 20px;
+    
+    
+}
+.container__h1{
+    font-size: 1.5em;
+}
 
 .container__skip{
-    background-color: skyblue;
+   
     grid-area: arriba;
 }
 
 .container__pic{
-    background-color: green;
+    
     grid-area: img;
     background-image: url(../storage/img/shopping.svg);
     background-position: center;
@@ -80,16 +106,50 @@
 }
 
 .container__title{
-    background-color: pink;
+    
     grid-area: titulo;
 }
 
 .container__but{
-    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+   
     grid-area: boton;
+    color: #fcfcfc;
+
+}
+.container__but button  {
+    color: #fcfcfc;
+    width: 85%;
+    height: 40%;
+    background-color: var(--color-black);
+    border-radius: 10px;;
+   
+    font-size: 0.875em;
+    
+
+}
+
+.container__but button a {
+    text-decoration: none;
+    background: var(--color-black);
+    color: #fcfcfc;
+    font-family: "PlusJakartaSans-Bold";
+
+
+}
+.container__but img{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 40px;
 }
 
 .container__else{
-    background-color: black;
+    
     grid-area: resto;
 }
