@@ -1,0 +1,78 @@
+:root{
+
+    /* Brand Color */
+  
+    --color-Cyan:#21D4B4;
+  
+    --color-Cyan-50:#F4FDFA;
+  
+    --color-Black:#1C1B1B;
+  
+    --color-white:#ffffff;
+  
+    /* Grey */
+  
+    --color-Crey-50:#F4F5FD;
+  
+    --color-Crey-100:#C0C0C0;
+  
+    --color-Crey-150:#6F7384;
+  
+    /* General */
+  
+    --color-Red:#EE4D4D;
+  
+    --color-Green:#08E488;
+  
+    --color-Blue:#1F88DA;
+  
+    --color-Purple:#4F1FDA;
+  
+    --color-Yellow:#EBEF14;
+  
+    --color-Orange:#F0821D;
+  
+    --color-Merigold:#FFCB45;
+  
+    --color-Brown:#5A1A05;
+  
+    --color-Pink:#CE1DEB;
+  
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--color-Crey-50);
+}
+
+.header_container_flecha a i {
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--color-Black);
+    /* background-image: url(../storage/img/Line\ arrow-left.png); */
+}
+.header_container_titulo {
+    font-size: .9em;
+    text-transform: capitalize;
+    margin: 5%;
+}
+
+.header_container_pag .pag_actual {
+    font-size: .8em;
+}
+
+.header_container_pag .pag_siguiente {
+    font-size: .8em;
+    color: var(--color-Crey-100);
+}
