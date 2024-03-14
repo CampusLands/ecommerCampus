@@ -14,8 +14,8 @@ body{
     height: 100vh;
 }
 .screenCheckout{
-    display: flex;
-    flex-direction: column ;
+display: flex;
+flex-direction: column ;
 }
 header{
     width: 100%;
@@ -26,8 +26,11 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
+}
+.bx{
+    font-size: 9vw;
 }
 .icon1, .icon2, .icon3{
     display: flex;
