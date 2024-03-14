@@ -9,3 +9,110 @@
     font-family: "PlusJakartaSans-Regular";
     background: var(--color-primary);
 }
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.state_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;   
+    padding: 1em 3.5em; 
+    
+}
+.borde_section{
+    border-bottom: solid 1px #ebebeb;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;   
+    padding: 2em 1em;
+    font-size: 0.9em;
+}
+.items i{
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.section_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;   
+    margin: 1em 0em;
+}
+
+.state_icons div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.state_icons small{
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+.details_shipping_address,
+.order_info{
+    width: 100vw;
+    padding: 0 1em;
+}
+
+.details_shipping_address h1,
+.order_info h1{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+.details_shipping_address table,
+.order_info table{
+    width: 90vw;
+    font-size: 0.8em;
+    color: #646464;
+}
+.details_shipping_address table tr,
+.order_info table tr {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0em;
+}
+
+.order_info table tfoot {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 1em 0em;
+    color: black;
+}
+
+.boton_footer_checkaut{
+    background: #1a1a1a;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    margin-top: 3em;
+    border-radius: 0.9em;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.boton_footer_checkaut:hover{
+    background: #2e2e2e;
+    border-radius: 0.4em;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
