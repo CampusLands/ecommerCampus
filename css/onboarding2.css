@@ -1,18 +1,18 @@
 @import url(variables.css);
 :root{
-    --color-primary: #fff;
-    --color-title: #1c1b1b;
+    --color-white: #fff;
+    --color-Black: #1c1b1b;
     --color-ternary: #21d4b4;
-    --color-p: #6f7384;
+    --color-Crey-150: #6f7384;
     --radius:  12px;
-    --color-white: #f4fdfa;
+    --color-Cyan-50: #f4fdfa;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    background: var(--color-primary);
+    background: var(--color-white);
 }
 
 .main {
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-white);
+    background-color: var(--color-Cyan-50);
     width: 100%;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .main__title {
-    color: var(--color-title);
+    color: var(--color-Black);
     line-height: 120%;
     font-size: 1.5rem;
     font-weight: bold;
@@ -69,15 +69,15 @@
 
 .main__text {
     font-size: 0.825rem;
-    color: var(--color-p);
+    color: var(--color-Crey-150);
     margin-block: 3rem;
     line-height: 150%;
     font-family: "PlusJakartaSans-Regular";
 }
 
 .main__btn {
-    background-color: var(--color-title);
-    color: var(--color-white);
+    background-color: var(--color-Black);
+    color: var(--color-Cyan-50);
     display: block;
     padding-block: 1.5rem;
     font-size: 0.825rem;
@@ -96,7 +96,7 @@
 .main__btns span{
     width: 6px;
     height: 6px;
-    background-color: var(--color-p);
+    background-color: var(--color-Crey-150);
     border-radius: 50%;
 }
 
