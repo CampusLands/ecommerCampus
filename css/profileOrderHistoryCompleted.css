@@ -64,6 +64,24 @@ body {
     font-size: .8em;
 }
 
+.nav>* >a{
+    text-decoration: none;
+    font-family: "PlusJakartaSans-SemiBold";
+
+}
+
+
+.nav__item2 {
+    background-color: var(--color-three);
+}
+
+.nav__item1 a{
+    color: var(--color-three);
+}
+.nav__item2 a{
+    color: var(--color-one);
+}
+
 .nav__item2 {
     background-color: var(--color-three);
     color: var(--color-one);
