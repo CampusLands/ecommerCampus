@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "workbench.iconTheme": "icons"
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> 90b7d313b467b1c615f946db50bcd4038b47d7a4
 }
