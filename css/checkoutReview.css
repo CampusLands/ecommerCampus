@@ -2,6 +2,8 @@
 :root{
     --color-primary:#fcfcfc;
 }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,38 @@
     font-family: "PlusJakartaSans-Regular";
     background: var(--color-primary);
 }
+.screenCheckout{
+    display: flex;
+    flex-direction: column ;
+    }
+    
+    .iconsSection1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75vw;
+        margin-left: 5vw;
+    }
+    .bx{
+        font-size: 9vw;
+    }
+    .icon1, .icon2, .icon3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line{
+        width: 12vw;
+        height: 0.5px;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+    
+
+
+.hidden{
+    display: none;
+}
+
 main
 {
     display: flex;
