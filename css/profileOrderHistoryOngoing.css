@@ -44,7 +44,7 @@ body {
 
 /*Nav*/
 .nav {
-    margin: 10px 20px;
+    margin: 10px 20px 20px 20px;
     height: 50px;
     background-color: var(--color-two);
     display: flex;
