@@ -193,10 +193,14 @@ body {
 }
 .info__buttons input{
     border: 1px solid var(--color-two);
+    color: var(--color-five);
     border-left: 0;
     border-right: 0;
     text-align: center;
     border-radius: 0;
     font-size: 1.2em;
     flex: 1.5;
+}
+.info__buttons input::placeholder{
+    color: var(--color-five);
 }
