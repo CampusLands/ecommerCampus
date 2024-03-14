@@ -12,22 +12,24 @@
     background: var(--color-primary);
 }
 
-html {
-    width: 100vw;
-    height: 10vh;
-}
-
-.card__Wishlist__ES {
+body > div {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    padding: 1rem;
+}
+.card__Wishlist__ES {
+    /* display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;
+    align-items: center; */
     text-align: center;
-
+margin: 0 auto;
 }
 
 .img__shop {
-    margin: 20vh auto 2rem;
+    margin: auto 1rem;
 }
 
 .img__shop img {
@@ -42,21 +44,22 @@ html {
     font-family: "PlusJakartaSans-ExtraBold";
     font-weight: bold;
     margin-bottom: 1.3rem;
-
 }
 
 
 .title__card button {
+    display: block;
+    width: 100%;
     border: none;
     background: rgb(23, 23, 23);
-    padding: 1.5rem 7.5rem;
+    padding: 1rem;
     border-radius: 14px;
-    margin-bottom: 5rem;
+    margin: 0 auto;
 }
 
 .title__card p {
     font-size: 1.08rem;
-    margin: 0 3rem 2rem 2.5rem;
+    margin: 1rem auto;
     color: rgb(119, 111, 111);
 }
 
