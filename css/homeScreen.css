@@ -59,20 +59,21 @@ header div{
 }
 .categorias{
     position: absolute;
-    margin-top: 23vh;
+    margin-top: 22vh;
     height: 2.5vh;
     width: 11vh;
     left: 2.5vh;
 }
-.categorias ol{
-    font-size: 4vw;
-    
+.categorias h3{
+    font-size: 5vw;
+    font-family: "PlusJakartaSans-Bold";
+
 }
 .categoria_1{
     position: absolute;
-    height: 5vh;
-    width: 5.5vh;
-    margin-top: 27vh;
+    height: 10vh;
+    width: 8vh;
+    margin-top: 26vh;
     left: 3.5vh;
 }
 .telefono img{
@@ -81,9 +82,9 @@ header div{
 }
 .categoria_2{
     position: absolute;
-    height: 5vh;
-    width: 5.5vh;
-    margin-top: 27vh;
+    height: 10vh;
+    width: 8vh;
+    margin-top: 26vh;
     left: 15vh;
 }
 .bolso img{
@@ -92,9 +93,9 @@ header div{
 }
 .categoria_3{
     position: absolute;
-    height: 5vh;
-    width: 5.5vh;
-    margin-top: 27vh;
+    height:10vh;
+    width: 8vh;
+    margin-top: 26vh;
     left: 27vh;
 }
 .mueble img{
@@ -102,10 +103,11 @@ header div{
     height: 100%;
 }
 .categoria_4{
+    
     position: absolute;
-    height: 5vh;
-    width: 5.5vh;
-    margin-top: 27vh;
+    height: 10vh;
+    width: 8vh;
+    margin-top: 26vh;
     left: 40vh;
 }
 .carro img{
@@ -115,14 +117,16 @@ header div{
 .productos{
 
     position: absolute;
-    margin-top: 35vh;
+    margin-top: 34.5vh;
     height: 2.5vh;
-    width: 16vh;
+    width: 20vh;
     left: 2.5vh;
 }
 
-.productos ol{
-    font-size: 4vw;
+.productos h3{
+    font-size: 5vw;
+    font-family: "PlusJakartaSans-Bold";
+
 }
 
 .producto_1{
@@ -141,7 +145,7 @@ header div{
     width: 20vh;
     height: 27.3vh;
     margin-top: 39vh;
-    left: 26vh;
+    left: 28.5vh;
 }
 .gafas img{
     width: 100%;
@@ -162,7 +166,7 @@ header div{
     position: absolute;
     width: 20vh;
     margin-top: 70vh;
-    left: 26vh;
+    left: 28.5vh;
 }
 .bolsa img{
     width: 100%;
