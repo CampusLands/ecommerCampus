@@ -2,9 +2,10 @@
 :root{
     --color-primary:#fcfcfc;
     --color-blue: #1F8BDA;
+    --color-purple: #4F1FDA;
     --color-green: #08E488; 
     --color-grey: #6F7384;          
-    --color-golden: #DFB300;
+    --color-golden: #DFB300;    
     --color-black: #000000; 
 }
 
@@ -17,6 +18,44 @@
 }
 
 
+.header{
+    background: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.header .retroseso{
+    margin-left: 27px;
+    display: flex;
+    background: none;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .retroseso img{
+    background: none;
+    height: 4vh;
+}
+
+.header .Wish{
+    margin-right: 27px;
+    display: flex;
+    background: none;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .Wish img{
+    background: none;
+    height: 4vh;
+}
 
 
 .main{
@@ -148,12 +187,31 @@
 }
 
 .product_Colors_Quantity .colors div{
-    background: var(--color-blue);
     width: 4vh;
     height: 4vh;
     border-radius: 100%;
     margin-top: 3%;
     margin-right: 3%;
+}
+
+.product_Colors_Quantity .colors .color_1{
+    background: var(--color-black);
+}
+
+.product_Colors_Quantity .colors .color_2{
+    background: var(--color-grey);
+}
+
+.product_Colors_Quantity .colors .color_3{
+    background: var(--color-purple);
+}
+
+.product_Colors_Quantity .colors .color_4{
+    background: var(--color-blue);
+}
+
+.product_Colors_Quantity .colors .color_5{
+    background: var(--color-grey);
 }
 
 .product_Colors_Quantity{
@@ -186,12 +244,19 @@
     justify-content: center;
 }
 
+.product_Colors_Quantity .Sizes .Size_3{
+    border: none;
+    color: var(--color-primary);
+    background-color: var(--color-black);
+}
+
 .product_Colors_Quantity .title_Quantity{
     margin-top: 2%;
 }
 
 .product_Colors_Quantity .Quantity{
     display: flex;
+    flex-direction: column;
 }
 
 .product_Colors_Quantity .Quantity div{
