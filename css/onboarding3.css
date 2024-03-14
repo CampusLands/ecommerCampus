@@ -1,0 +1,137 @@
+@import url(variables.css);
+:root{
+    /* Brand Color */
+    --color-Cyan:#21D4B4;
+    --color-Cyan-50:#F4FDFA;
+    --color-Black:#1C1B1B;
+    --color-white:#ffffff;
+    /* Grey */
+    --color-Crey-50:#F4F5FD;
+    --color-Crey-100:#C0C0C0;
+    --color-Crey-150:#6F7384;
+    /* General */
+    --color-Red:#EE4D4D;
+    --color-Green:#08E488;
+    --color-Blue:#1F88DA;
+    --color-Purple:#4F1FDA;
+    --color-Yellow:#EBEF14;
+    --color-Orange:#F0821D;
+    --color-Merigold:#FFCB45;
+    --color-Brown:#5A1A05;
+    --color-Pink:#CE1DEB;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+body{
+    height: 100vh;
+    padding:1em;
+    background: var(--color-white);
+}
+main{
+    /* 100% de lo que se le asigne en body "General" */
+    height: 100%; 
+
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "ilustra"
+    "ilustra"
+    "ilustra"
+    "desicion"
+    "desicion"
+    ;
+}
+.o3_ilistracion{
+    grid-area: ilustra;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-Cyan-50);
+    border-radius: 2em;
+}
+.o3_ilistracion img{
+    object-fit: contain;
+}
+.o3_ilistracion img:first-child{
+    height: 2em;
+    align-self: start;
+
+    padding-left: 1.5em;
+}
+.o3_ilistracion img:last-child{
+    flex-grow: 1;
+    width: 70%;
+
+    align-self: center;
+}
+.o3_Decsion{
+    grid-area: desicion;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+}
+.o3_Decsion h1{
+    /* width: 60%; */
+    color: var(--color-Black);
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.o3_Decsion p{
+    color: var(--color-Crey-150);
+    text-align: center;
+    font-size: 14px;
+    font-weight: regular;
+    letter-spacing: 0.5%;
+}
+.o3_Decsion_boton{
+    width: 100%;
+
+    display: flex;
+    gap: 1em;
+}
+button{
+    width: 50%;
+    height: 4em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    border: 1px solid ;
+    border-radius: 1em;
+    
+    color: var(--color-Black);
+    background: var(--color-white);
+    border-color: var(--color-Crey-50);
+}
+button:hover{
+    color: var(--color-white);
+    background: var(--color-Black);
+    border-color: var(--color-white);
+}
+.o3_Decsion_puntos{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 1em;
+}
+.o3_Decsion_puntos span{
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-Crey-100);
+    border-radius: 50%;
+}
+.o3_Decsion_puntos span:last-child{
+    background-color: var(--color-Green);
+}
