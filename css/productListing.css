@@ -122,14 +122,14 @@
 }
 
 .reloj__1 img:first-child, .reloj__3 img:first-child, .reloj__5 img:first-child{
-    width: 98%;
+    width: 96%;
     height: 98%;
     margin-top: 18px;
     margin-left: 4px;
 }
 
 .reloj__2 img:first-child, .reloj__4 img:first-child, .reloj__6 img:first-child{
-    width: 98%;
+    width: 96%;
     height: 98%;
     margin-top: 18px;
     margin-left: 0px;
@@ -138,7 +138,7 @@
 .reloj__1 img:last-child, .reloj__3 img:last-child, .reloj__5 img:last-child{
     width: 25px;
     position: relative;
-    top: -190px;
+    top: -185px;
     left: 170px;
 
 }
@@ -146,7 +146,7 @@
 .reloj__2 img:last-child, .reloj__4 img:last-child, .reloj__6 img:last-child{
     width: 25px;
     position: relative;
-    top: -190px;
+    top: -185px;
     left: 170px;
 }
 
@@ -296,7 +296,6 @@
     height: 25px;
     margin-left: 29.5px;
     z-index: 2;
-    
 }
 
 .circulo0303{
