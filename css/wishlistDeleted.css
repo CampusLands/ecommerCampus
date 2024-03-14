@@ -1,0 +1,55 @@
+@import url(variables.css);
+:root{
+    --color-primary:#fcfcfc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    background: var(--color-primary);
+}
+
+.alert{
+    position: absolute;
+    background: white;
+    bottom: 0;
+    z-index: 21;
+    width: 100%; 
+    height: 27.5vh;
+    border-radius: 27px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.alert p{
+    font-size: 2vh;
+    margin: 5%;
+    margin-top: 10%;
+}
+.alert button{
+    font-size: 1.5vh;
+    border-style: none;
+    width: 90%;
+    margin: 5%;
+    margin-top: 0;
+}
+.delete{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    height: 24%;
+}
+.cancel{
+    background: none;
+    height: 24%;
+}
+.opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.6);
+    z-index: 11;
+}
