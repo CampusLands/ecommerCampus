@@ -8,9 +8,18 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header></header>
-    <main class="checkout">
-        <section class="checkout__envio">
+    <header>
+        <div class="header_container">
+            <div class="header_container_flecha">
+                <a href=""><i class='bx bx-arrow-back'></i></a>
+            </div>
+            <div class="header_container_titulo">
+                <p>Checkout</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="envio">
                 <div class="envio__shipping">
                     <i class='bx bxs-package'></i>
                     <p>Shipping</p>
@@ -36,19 +45,22 @@
         </section>
         <section class="card">
             <div class="card__name">
-                <p>Card Holder Name*</p>
+                <p>Card Holder Name <span>*</span></p>
                 <input type="text" placeholder="Enter card holder name">
             </div>
             <div class="card__number">
-                <p>Card Number*</p>
+                <p>Card Number <span>*</span></p>
                 <input type="number" placeholder="4111 1111 1111 1111">
             </div>
             <div class="card__etc">
-                <p>Expiration*</p>
-                <p>CVV*</p>
-                <input type="date" placeholder="MM/YY">
-                <input type="number" placeholder="123">
+                <p>Expiration <span>*</span></p>
+                <p class="etc__cvv">CVV <span>*</span></p>
+                <input type="text" placeholder="MM/YY" class="etc__mmyy">
+                <input type="number" placeholder="123" class="etc__123">
             </div>
+        </section>
+        <section class="continue">
+            <button>Continue</button>
         </section>
     </main>
 </body>

@@ -4,6 +4,9 @@
     --color-secundary: #21D4B4;
     --color-ternary: #6F7384;
     --color-quaternary: #F4FDFA;
+    --color-quintuple: #EE4D4D;
+    --color-sextuple: #C0C0C0;
+    --color-septuple: #1C1B1B;
 }
 *{
     margin: 0;
@@ -16,27 +19,43 @@ body{
     width: 100vw;
 }
 
-header{
-    width: 100%;
-    margin-bottom: 10%;
+.header_container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e4e0e0a2;
 }
 
-.checkout{
-    width: 100%;
+.header_container_flecha a i {
+    font-size: 30px;
+    padding-right: 10px;
+}
+.header_container_titulo {
+    font-size: 1.3em;
 }
 
-.checkout__envio{
+main{
     width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.checkout__envio i{
+.envio{
+    width: 100%;
+    padding-top: 15px;
+}
+
+.envio i{
     font-size: 9vw;
 }
 
-.checkout__envio{
+.envio{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 2vw;
 }
 
 .envio__shipping, .envio__payment, .envio__review{
@@ -67,13 +86,10 @@ header{
 .pay > div{
     width: 40%;
     background-color: var(--color-quaternary);
-    margin: 2vw;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 5vw;
-    margin: 9vw 1.5vw;
-    background-color: var(--color-quaternary);
+    margin: 7vw 1.5vw;
     border-radius: 2vw;
 }
 
@@ -82,6 +98,73 @@ header{
     background-color: var(--color-quaternary);
 }
 
-.card__name{
+.card{
+    width: 100%;
+    padding: 2vw;
+}
+
+.card__name, .card__number{
     display: flex;
+    flex-direction: column;
+}
+
+.card span{
+    color: var(--color-quintuple);
+}
+
+.card p{
+    margin: 10px 0;
+}
+
+.card input{
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--color-sextuple);
+}
+
+.card input::placeholder{
+    color: var(--color-sextuple);
+}
+
+.card__etc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__etc p, .card__etc input{
+    width: 50%;
+}
+
+.card__etc input{
+    width: 49.4%;
+}
+
+.etc__mmyy{
+    margin-right: .5vw;
+}
+
+.etc__123{
+    margin-left: .5vw;
+}
+
+.etc__cvv{
+    padding-left: .5vw;
+}
+
+.continue{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 0 1.5vw;
+    margin-bottom: 35px;
+}
+
+.continue button{
+    width: 100%;
+    background: var(--color-septuple);
+    color: var(--color-primary);
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
 }
