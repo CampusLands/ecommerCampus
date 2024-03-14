@@ -1,12 +1,12 @@
 @import url(variables.css);
 :root{
     --color-primary:#fcfcfc;
-    --color-Blue: #1F8BDA;
-    --color-Purple: #4F1FDA;
-    --color-Green: #08E488; 
+    --color-blue: #1F8BDA;
+    --color-purple: #4F1FDA;
+    --color-green: #08E488; 
     --color-grey: #6F7384;          
     --color-golden: #DFB300;    
-    --color-Black: #1C1B1B; 
+    --color-black: #000000; 
 }
 
 *{
@@ -19,43 +19,44 @@
 
 
 .header{
-    background: none;
-    width: 100%;
-    margin-top: 7px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px;
+    background: var(--color-primary);
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    align-items: center;
     position: fixed;
     z-index: 2;
     top: 0;
 }
 
-.header .retroseso{
-    margin-left: 27px;
+.header .check{
     display: flex;
-    background: none;
     justify-content: center;
     flex-direction: row;
     align-items: center;
 }
 
-.header .retroseso img{
+.header .check{
     background: none;
-    height: 4vh;
 }
 
-.header .Wish{
-    margin-right: 27px;
-    display: flex;
-    background: none;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+.header .check img{
+    height: 30px;
+    margin: 10px;
 }
 
-.header .Wish img{
+.header .check_descript{
+    margin: 10px;
     background: none;
-    height: 4vh;
+}
+
+.header .check_link a{
+    background: none;
+    text-decoration: none;
+    color: var(--color-green);
 }
 
 
@@ -112,11 +113,11 @@
 }
 
 .product_labels h3:first-child{
-    background: var(--color-Blue);
+    background: var(--color-blue);
 }
 
 .product_labels h3:last-child{
-    background: var(--color-Green);
+    background: var(--color-green);
 }
 
 .product_Detail .product_name_and_price{
@@ -127,7 +128,16 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
+.name{
+    margin-top: 10px;
+}
+.price h2{
+    font-size: 2.4vh;
+}
+.price h3{
+    margin-left: 9px;
+    font-size: 1.7vh;
+}
 .product_name_and_price .name{
     width: 70%;
     font-size: 1.6em;
@@ -142,6 +152,7 @@
 
 .product_name_and_price .price h3{
     color: var(--color-grey);
+    font-family: PlusJakartaSans-Regular;
 }
 
 .rating{
@@ -169,7 +180,13 @@
     margin-left: 23px;
     margin-right: 23px;
 }
-
+.product_description p{
+    font-size: 2vh;
+    color: var(--color-grey);
+}
+.product_description p a{
+    text-decoration: none;
+}
 .product_description .description_1, .description_2, .description_3{
     width: 100%;
     margin-top: 2.6%;
@@ -197,7 +214,7 @@
 }
 
 .product_Colors_Quantity .colors .color_1{
-    background: var(--color-Black);
+    background: var(--color-black);
 }
 
 .product_Colors_Quantity .colors .color_2{
@@ -205,11 +222,11 @@
 }
 
 .product_Colors_Quantity .colors .color_3{
-    background: var(--color-Purple);
+    background: var(--color-purple);
 }
 
 .product_Colors_Quantity .colors .color_4{
-    background: var(--color-Plue);
+    background: var(--color-blue);
 }
 
 .product_Colors_Quantity .colors .color_5{
@@ -249,7 +266,7 @@
 .product_Colors_Quantity .Sizes .Size_3{
     border: none;
     color: var(--color-primary);
-    background-color: var(--color-Black);
+    background-color: var(--color-black);
 }
 
 .product_Colors_Quantity .title_Quantity{
@@ -288,6 +305,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 8vh;
 }
 
 .Buttons .button_1{
@@ -296,7 +314,7 @@
     font-size: 2em;
     border-radius: 15px;
     font-family: "PlusJakartaSans-SemiBold";
-    color: var(--color-Black);
+    color: var(--color-black);
     background: var(--color-primary);
     border: 1px solid var(--color-primary);
     box-shadow: rgba(0, 0, 0, 1.05) 0px 0px 0px 1px;
@@ -309,9 +327,8 @@
     border-radius: 15px;
     font-family: "PlusJakartaSans-SemiBold";
     color: var(--color-primary);
-    background: var(--color-Black);
+    background: var(--color-black);
 }
-
 
 .Buttons .button_2 a{
     color: var(--color-primary);
@@ -321,7 +338,7 @@
 
 .Buttons .button_2 i{
     color: var(--color-primary);
-    background: var(--color-Black);
+    background: var(--color-black);
 }
 
 @media (width < 500px) {
