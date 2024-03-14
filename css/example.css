@@ -15,7 +15,7 @@ body{
 }
 header{
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 nav{
     margin-left: 4%;
@@ -25,6 +25,8 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
+    margin-left: 6%;
 }
 .icon1, .icon2, .icon3{
     display: flex;
@@ -41,7 +43,6 @@ nav{
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    max-width:45vh;
 }
 .input input[type="text"]{
     margin-top: 5%;
@@ -56,7 +57,7 @@ nav{
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    max-width:45vh;
+
 }
 
 .inputPhone input[type="text"]{    
@@ -70,7 +71,6 @@ nav{
     border: none;
     padding: 0.5vh;
 }
-
 .containerPhone{
     margin-top: 5%;
     border: 1px solid #cccccc80;
@@ -78,3 +78,49 @@ nav{
     width: 90%;
     border-radius: 5px;
 }
+
+.containerProvidence, .containerCity{
+    margin-top: 5%;
+    border: 1px solid #cccccc80;
+    padding: 1.5vh;
+    width: 90%;
+    border-radius: 5px;
+}
+.selectProvidence select, .selectCity select{
+    width: 100%;
+    border: none;
+    padding: 0.5vh;
+}
+
+.inputPostal, .inputAdress{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 5%;
+}
+
+label{
+    font-weight: bold;
+}
+
+button{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5vh;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 1em;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.color-acento{ color: orangered ; }

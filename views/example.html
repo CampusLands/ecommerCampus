@@ -30,7 +30,7 @@
     <nav class="section2">
         <div class="inputName">
             <form>
-                <label for="nombre">Full Name *</label>
+                <label for="nombre">Full Name <span class="color-acento">*</span></label>
                 <div class="input">
                     <input type="text" id="nombre" name="nombre" placeholder="Enter full name">
                 </div>
@@ -38,7 +38,7 @@
         </div>
         <div class="phoneNumber">
             <form>
-                <label for="numero">Phone Number *</label>
+                <label for="numero">Phone Number <span class="color-acento">*</span></label>
                 <div class="containerPhone">
                     <div class="inputPhone">
                         <select id="pais" name="pais">
@@ -53,9 +53,10 @@
         </div>
         <div class="inputProvidence">
             <form>
-                <div class="containerPhone">
-                    <div class="inputPhone">
-                        <select id="pais" name="pais" placeholder="">
+                <div class="containerProvidence">
+                    <div class="selectProvidence">
+                        <select id="province" name="province" placeholder="">
+                            <option value="1">Select province</option>
                             <option value="AR">Arg</option>
                             <option value="BR">Bra</option>
                             <option value="CL">Chil</option>
@@ -64,6 +65,38 @@
                 </form>
             </div>
         </div>
+        <div class="inputCity">
+            <form>
+                <div class="containerCity">
+                    <div class="selectCity">
+                        <select id="City" name="City" placeholder="">
+                            <option value="1">Select City</option>
+                            <option value="AR">Arg</option>
+                            <option value="BR">Bra</option>
+                            <option value="CL">Chil</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="inputAdress">
+            <form>
+                <label for="adress">Street Adress <span class="color-acento">*</span></label>
+                <div class="input">
+                    <input type="text" id="adress" name="adress" placeholder="Enter street adress">
+                </div>
+            </form>
+        </div>
+        <div class="inputPostal">
+            <form>
+                <label for="postal">Postal Code <span class="color-acento">*</span></label>
+                <div class="input">
+                    <input type="text" id="postal" name="postal" placeholder="Enter postal code">
+                </div>
+            </form>
+        </div>
+        <button> Save  </button>
     </nav>
+        
 </body>
 </html>
