@@ -2,16 +2,16 @@
 :root{
     --color-primary:#fcfcfc;
     --color-secundary: #6F7384;
+    --color-secundary-transparent:#e4e0e0a2;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    border: 1px solid black;
 }
 body{
-    outline: 3px solid red;
+    /*outline: 3px solid red;*/
     height: 100vh;
     width: 100%;
     
@@ -20,15 +20,18 @@ body{
     padding: 3%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 4.5fr 6fr;
     grid-template-areas: 
     "carts"
     "order";
+
 }
 
 .main__cart{
-    background: green;
+    height: 70%;
+    /*background: green;*/
     grid-area: carts;
+    gap: 1px;
 }
 .cart{
     display: flex;
@@ -38,18 +41,25 @@ body{
     border-radius: 12px;
 }
 .cart__info{
-    margin-left: 3%;
+    width: 80%;
+    padding-left: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .info__headline{
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .headline__name{
     display: flex;
+    justify-content: space-between;
+}
+.name{
+    font-family: "PlusJakartaSans-Medium";
+    padding-bottom: 5px;
 }
 .headline__name img{
     align-self: flex-start;
@@ -58,6 +68,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+.discount__after{
+    font-family: "PlusJakartaSans-Medium";
+}
 .discount__before{
     color: var(--color-secundary);
     text-decoration: line-through;
@@ -65,34 +78,49 @@ body{
 .info__quantity{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .quantity__count{
+    padding: 2%;
     width: 45%;
     display: flex;
     justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid var(--color-secundary-transparent);
+}
+.quantity__count  img{
+    border-radius: 12px;
 }
 
 
 
-.order__dad{
-    background: red;
+.order__dad{   
+    /*background: red;*/
     grid-area: order;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 .main__order{
+    height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .order__info{
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .info__detail{
+    height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.info__title{
+    font-family: "PlusJakartaSans-Medium";
 }
 .detail__subtotal,
 .detail__shipping,
@@ -100,12 +128,18 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.detail__total p{
+    font-family: "PlusJakartaSans-Medium";
+}
 .detail__subtotal small,
 .detail__shipping small{
     color: var(--color-secundary);
 }
 .order__button{
+    height: 30%;
     border-radius: 12px;
     background: black;
     color: var(--color-primary);
+    font-family: "PlusJakarta-Medium";
+    border: none;
 }
