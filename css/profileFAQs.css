@@ -1,0 +1,32 @@
+@import url(variables.css);
+:root{
+    --color-primary:#6F7384;
+    --color-submit:#1C1B1B;
+    --color-letra: #fff;
+}
+.main{
+    /* background: red; */
+    padding: 0 0.8rem;
+    padding-bottom: 6rem;
+}
+.main__title{
+    /* background: blue; */
+}
+.title__article{
+    /* background: orange; */
+    padding: 0.8rem 0;
+}
+.title__article h2{
+    text-transform: capitalize;
+    font-family: "PlusJakartaSans-Bold";
+}
+.title__article p{
+    color: var(--color-primary);
+    font-family: "PlusJakartaSans-Regular";
+}
+.main__web{
+    text-align: center;
+}
+.web__description a{
+    text-decoration: none;
+} 
