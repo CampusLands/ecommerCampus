@@ -1,13 +1,19 @@
 @import url(variables.css);
+
 :root{
-    /* --color-primary:#fcfcfc; */
+    --color-primario: #fcfcfc;
+    --color-secundario: #f4f5fd;
+    --color-ternario: #1C1B1B;
+    --color-cuarto: #6F7384;
+    /*#f4f5fd*/
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: "PlusJakartaSans-Regular"; */
-    background: var(--color-primary);
+    /*background: var(--color-primario);*/
 }
 /* .prueba{
     width: 100%;
@@ -19,65 +25,59 @@
 .main{
     padding: 0 0.8rem;
 }
-.header{
-    /* background: coral; */
-    height: 8.5em;
+.header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.1em;
-    font-family: "PlusJakartaSans-Sans";
-    gap: 1.5em;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-secundario);
+    font-family: "PlusJakartaSans-Regular";
+}
+.header img {
+    width: 2em;
+    margin-right: 13px;
+}
+.header p {
+    font-size: .8em;
+}
+.nav {
+    margin: 10px 20px 20px 20px;
+    height: 50px;
+    background-color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav>* {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: .8em;
 }
 
-.header__principal{
-    /* background: red; */
-    height: 5em;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    font-size: 14px;
-    align-items: center;
-    text-transform: capitalize;
-    font-weight: 500;
-    /* padding: 1.1em; */
+.nav>* >a{
+    text-decoration: none;
+    font-family: "PlusJakartaSans-SemiBold";
 }
-.header i{
-    font-size: 25px;
+
+.nav__item1 {
+    background-color: var(--color-ternario);
 }
-.header__botones{
-    /* background: #F4F5FD; */
-    background: #F4F5FD;
-    /* padding-left: 1.1em;
-    padding-right: 1.1em; */
-    height: 4em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1em;
-    font-weight: 500;
+
+.nav__item1 a{
+    color: var(--color-primario);
 }
-.header__botones div:first-child{
-    background: #1C1B1B;
-    color: #FFFFFF;
-    text-transform: capitalize;
-    font-size: 14px;
-    padding: 1em;
-    border-radius: 1em;
-    width: 50%;
-    text-align: center;
-    font-family: "PlusJakartaSans-Sans";
-}
-.header__botones div:nth-child(2){
-    /* background: #1C1B1B; */
-    color: #1C1B1B;
-    text-transform: capitalize;
-    font-size: 14px;
-    padding: 1em;
-    border-radius: 1em;
-    width: 50%;
-    text-align: center;
-    font-family: "PlusJakartaSans-Sans";
+.nav__item2 a{
+    color: var(--color-ternario);
 }
 
 .img{
@@ -90,15 +90,14 @@
 }
 
 .principal__card{
-    /* background: greenyellow; */
+    /*background: greenyellow;*/
     width: 100%;
-    height: 25em;
-    padding: 2.22em; /*alinear con el header*/
+    height: 15em;
+    padding: 20px; /*alinear con el header*/
     display: flex;
     position: absolute;
     /* font-family: "PlusJakartaSans-SemiBold" */
     font-family: "PlusJakartaSans-Sans";
-    font-weight: 500;
 }
 
 .principal__card div{
@@ -108,28 +107,28 @@
     text-align: center;
 }
 .principal__card div h1{
-    color: #1C1B1B;
+    color: var(--color-ternario);
     font-size: 25px;
-    font-family: "PlusJakartaSans-Bold";
+    font-family: "PlusJakartaSans-SemiBold";
     
 }
 
 .principal__card div p{
     font-family: "PlusJakartaSans-Regular";
-    color: #6F7384;
+    color: var(--color-cuarto);
     font-size: 15px;
-    padding: .28em; /*2.5 = 0.3 + 2.2*/
-
+    padding: .45em; /*2.5 = 0.3 + 2.2*/
+    /*background: red;*/
 }
 
 .principal__card div button{
-    background: #1C1B1B;
-    color: #FFFFFF;
+    background: var(--color-ternario);
+    color: var(--color-primario);
     font-size: 14px;
     width: 100%;
     height: 60px;
     border-radius: 1em;
-    font-family: "PlusJakartaSans-Sans";
+    font-family: "PlusJakartaSans-SemiBold";
     text-transform: capitalize;
     cursor: pointer;
     border: none;

@@ -1,11 +1,135 @@
 @import url(variables.css);
+
 :root{
-    --color-primary:#fcfcfc;
+    --color-primario: #fcfcfc;
+    --color-secundario: #f4f5fd;
+    --color-ternario: #1C1B1B;
+    --color-cuarto: #6F7384;
+    /*#f4f5fd*/
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: "PlusJakartaSans-Regular"; */
+    /*background: var(--color-primario);*/
+}
+/* .prueba{
+    width: 100%;
+    height: 50px;
+    background: red;
+    display: relative;
+} */
+
+.main{
+    padding: 0 0.8rem;
+}
+.header {
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-secundario);
     font-family: "PlusJakartaSans-Regular";
-    background: var(--color-primary);
+}
+.header img {
+    width: 2em;
+    margin-right: 13px;
+}
+.header p {
+    font-size: .8em;
+}
+.nav {
+    margin: 10px 20px 20px 20px;
+    height: 50px;
+    background-color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav>* {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: .8em;
+}
+
+.nav>* >a{
+    text-decoration: none;
+    font-family: "PlusJakartaSans-SemiBold";
+}
+
+.nav__item2 {
+    background-color: var(--color-ternario);
+    color: var(--color-one);
+}
+
+.nav__item1 a{
+    color: var(--color-ternario);
+}
+.nav__item2 a{
+    color: var(--color-primario);
+}
+.img{
+    /* background: coral; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+
+}
+
+.principal__card{
+    /*background: greenyellow;*/
+    width: 100%;
+    height: 25em;
+    padding: 20px; /*alinear con el header*/
+    display: flex;
+    position: absolute;
+    /* font-family: "PlusJakartaSans-SemiBold" */
+    font-family: "PlusJakartaSans-Sans";
+}
+
+.principal__card div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+.principal__card div h1{
+    color: var(--color-ternario);
+    font-size: 25px;
+    font-family: "PlusJakartaSans-SemiBold";
+    
+}
+
+.principal__card div p{
+    font-family: "PlusJakartaSans-Regular";
+    color: var(--color-cuarto);
+    font-size: 15px;
+    padding: .45em; /*2.5 = 0.3 + 2.2*/
+
+}
+
+.principal__card div button{
+    background: var(--color-ternario);
+    color: var(--color-primario);
+    font-size: 14px;
+    width: 100%;
+    height: 60px;
+    border-radius: 1em;
+    font-family: "PlusJakartaSans-SemiBold";
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
 }
