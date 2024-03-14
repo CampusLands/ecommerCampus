@@ -44,10 +44,12 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-bottom: 60px;
 }
 
 .left, .right{
     margin: 2px;
+
 }
 .left{
     display: flex;
@@ -101,14 +103,10 @@
 
 }
 .right .box .imgHeadphones .imgHeart{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 8px;
     right: 6px;
     font-size: 15px;
-    z-index: 1;
     border-radius: 100%;
     color: rgb(222, 222, 222);
     background-color: rgb(60, 60, 60);
