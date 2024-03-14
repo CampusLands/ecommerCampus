@@ -20,17 +20,17 @@ body {
 .header_container {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #e4e0e0a2;
 }
 
 .header_container_flecha a i {
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 10px;
     color: black;
 }
 .header_container_titulo {
-    font-size: 1.3em;
+    font-size: .9em;
 }
 .header_container_pag {
     display: flex;
@@ -39,10 +39,10 @@ body {
 }
 
 .header_container_pag .pag_actual {
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .header_container_pag .pag_siguiente {
-    font-size: 1em;
+    font-size: .8em;
     color: #C0C0C0;
 }
