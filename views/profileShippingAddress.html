@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/example.css">
+    <link rel="stylesheet" href="../css/profileShippingAddress.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /*modificar la posicion del cursor de texto*/
+        input[type="tel"] {
+            width: 100px; /* Ancho del input */
+            padding: 0px 75px; /* Espacio interno del input */
+            font-size: 16px; /* Tamaño de la fuente */
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="header">
+        <i class='bx bx-arrow-back' ></i>
+        <p>shipping address</p>
+    </header>
+    <main class="main">
+        <section>
+            <article class="main__top">
+                <p>full name <span style="color: red;">*</span> </p>
+                <input type="name" required name="name" id="name" class="input__name" placeholder="     Enter Full Name">
+            </article>
+        </section>
+        <section>
+            <article class="main__lowtop">
+                <img src="../storage/img/Pakistan.svg">
+                <i class='bx bx-chevron-down'></i>
+                <p>phone number <span style="color: red;">*</span></p>
+                <input type="tel" required name="phone" id="phonenumber" class="input__phone" placeholder="+92">
+            </article>
+        </section>
+        <section>
+            <article class="main__mid">
+                <i class='bx bx-chevron-down'></i>
+                <div class="province">select province</div>
+            </article>
+        </section>
+        <section>
+            <article class="main__lowmid">
+                <i class='bx bx-chevron-down'></i>
+                <div class="city">select city</div>
+            </article>
+        </section>
+        <section>
+            <article class="main__highbottom">
+                <p>steet address <span style="color: red;">*</span> </p>
+                <input type="text" required name="name" id="address" class="input__address" placeholder="         Enter steet addrees">
+            </article>
+        </section>
+        <section>
+            <article class="main__midbottom">
+                <p>postal code <span style="color: red;">*</span> </p>
+                <input type="number" required name="name" id="code" class="input__code" placeholder="         Enter postal code">
+            </article>
+            <article class="main__bottom">
+                <button class="main__button">save</button>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
