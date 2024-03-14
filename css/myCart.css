@@ -1,20 +1,23 @@
 @import url(variables.css);
 :root{
     --color-primary:#fcfcfc;
+    --color-secundary: #6F7384;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
+    border: 1px solid black;
 }
 body{
     outline: 3px solid red;
     height: 100vh;
     width: 100%;
+    
 }
 .main{
-    padding: 5%;
+    padding: 3%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -23,44 +26,86 @@ body{
     "order";
 }
 
-.main_cart{
+.main__cart{
     background: green;
     grid-area: carts;
 }
 .cart{
     display: flex;
+    justify-content: space-between;
 }
-.cart_info{
+.cart__image img{
+    border-radius: 12px;
+}
+.cart__info{
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.info_headline{
+.info__headline{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.headline_name{
+.headline__name{
     display: flex;
 }
-.headline_discount{
+.headline__name img{
+    align-self: flex-start;
+}
+.headline__discount{
     display: flex;
     flex-direction: column;
 }
-.info_quantity{
+.discount__before{
+    color: var(--color-secundary);
+    text-decoration: line-through;
+}
+.info__quantity{
     display: flex;
     justify-content: space-between;
 }
-.quantity_count{
+.quantity__count{
     width: 45%;
     display: flex;
     justify-content: space-between;
 }
 
-.order_dad{
+
+
+.order__dad{
     background: red;
     grid-area: order;
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+.main__order{
+    display: flex;
+    flex-direction: column;
+}
+.order__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info__detail{
+    display: flex;
+    flex-direction: column;
+}
+.detail__subtotal,
+.detail__shipping,
+.detail__total{
+    display: flex;
+    justify-content: space-between;
+}
+.detail__subtotal small,
+.detail__shipping small{
+    color: var(--color-secundary);
+}
+.order__button{
+    border-radius: 12px;
+    background: black;
+    color: var(--color-primary);
 }
