@@ -1,6 +1,11 @@
 @import url(variables.css);
 :root{
     --color-primary:#fcfcfc;
+    --color-secundary: rgb(87, 87, 87);
+    --color-terciary: rgb(76, 13, 202);
+    --color-cuarto: rgb(57, 169, 255);
+    --color-quinto: rgb(184, 184, 184);
+
 }
 *{
     margin: 0;
@@ -11,17 +16,18 @@
 }
 
 .header{
-    /*background: blue;*/
-    position: relative;
+    background: #fff;
+    position: fixed;
     width: 100%;
     height: 3.5em;
     box-shadow: 0px 0px 2px 1px rgb(209, 209, 209);
+    z-index: 5;
 }
 
 .header__1{
     display: flex;
     /*background: red;*/
-    position: relative;
+    position: fixed;
     width: 100%;
     margin-top: 0px;
     justify-content: space-between;
@@ -41,9 +47,9 @@
 
 .div__1 h4{
     font-family: "PlusJakartaSans-Medium",;
-    font-size: 15px;
-    margin-top: 18px;
-    margin-left: 20px;
+    font-size: 1em;
+    margin-top: 1.2em;
+    margin-left: 1em;
     text-transform: capitalize;
 }
 
@@ -71,18 +77,19 @@
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr ;
+    grid-template-rows:.8fr repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr repeat(4, .8fr) 1fr ;
     grid-template-areas: 
+    ". . . ."
     "reloj1 reloj1 reloj2 reloj2"
     "reloj1 reloj1 reloj2 reloj2"
     "reloj1 reloj1 reloj2 reloj2"
     "colores1 colores1 colores2 colores2"
-    "texto1 texto1 . ."
+    "texto1 texto1 texto2 texto2"
     "reloj3 reloj3 reloj4 reloj4"
     "reloj3 reloj3 reloj4 reloj4"
     "reloj3 reloj3 reloj4 reloj4"
     "colores3 colores3 colores4 colores4"
-    ". . . ."
+    "texto3 texto3 texto4 texto4"
     "reloj5 reloj5 reloj6 reloj6"
     "reloj5 reloj5 reloj6 reloj6"
     "reloj5 reloj5 reloj6 reloj6"
@@ -122,52 +129,60 @@
 }
 
 .reloj__1 img:first-child, .reloj__3 img:first-child, .reloj__5 img:first-child{
-    width: 96%;
-    height: 98%;
-    margin-top: 18px;
-    margin-left: 4px;
+    width: 98%;
+    height: 100%;
+    margin-top: 3vh;
+    margin-left: .5vh;
 }
 
 .reloj__2 img:first-child, .reloj__4 img:first-child, .reloj__6 img:first-child{
-    width: 96%;
-    height: 98%;
-    margin-top: 18px;
-    margin-left: 0px;
+    width: 98%;
+    height: 100%;
+    margin-top: 3vh;
+    margin-left: .5vh;
 }
 
 .reloj__1 img:last-child, .reloj__3 img:last-child, .reloj__5 img:last-child{
-    width: 25px;
+    width: 12%;
     position: relative;
-    top: -185px;
-    left: 170px;
+    top: -20vh;
+    left: 20vh;
 
 }
 
 .reloj__2 img:last-child, .reloj__4 img:last-child, .reloj__6 img:last-child{
-    width: 25px;
+    width: 12%;
     position: relative;
-    top: -185px;
-    left: 170px;
+    top: -20vh;
+    left: 20vh;
 }
 
-.colores__1{
+.colores__1,
+.colores__2,
+.colores__3,
+.colores__4,
+.colores__5,
+.colores__6{
     position: relative;
     /*background: red;*/
-    display: flex;
-    grid-area: colores1;
     width: 190px;
     height: 40px;
+    margin-left: 8%;
     top: -40px;
     position: relative;
 }
 
-.colores__1 small{
+.colores__1 small,
+.colores__2 small,
+.colores__3 small,
+.colores__4 small,
+.colores__5 small,
+.colores__6 small{
     /*background: blue;*/
-    width: 120px;
-    margin-left: 60px;
-    margin-top: 5px;
+    width: 8vh;
+    margin-left: 45%;
     text-align: center;
-    font-size: 11px;
+    font-size: 70%;
     font-family: "PlusJakartaSans-Regular";
     text-decoration: underline;
     text-transform: capitalize;
@@ -177,14 +192,14 @@
     background: black;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
+    width: 13%;
+    height: 65%;
     margin-left: 10px;
     z-index: 3;
 }
 
 .circulo0102{
-    background: rgb(87, 87, 87);
+    background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
     width: 25px;
@@ -193,40 +208,17 @@
     z-index: 2;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(57, 169, 255);
+    border-color: var(--color-cuarto);
 }
 
 .circulo0103{
-    background: rgb(76, 13, 202);
+    background: var(--color-terciary);
     position: absolute;
     border-radius: 100%;
     width: 25px;
     height: 25px;
     margin-left: 48px;
     z-index: 1;
-}
-
-.colores__2{
-    position: relative;
-    /*background: red;*/
-    display: flex;
-    grid-area: colores2;
-    width: 190px;
-    height: 40px;
-    top: -40px;
-    position: relative;
-}
-
-.colores__2 small{
-    /*background: blue;*/
-    width: 120px;
-    margin-left: 60px;
-    margin-top: 5px;
-    text-align: center;
-    font-size: 11px;
-    font-family: "PlusJakartaSans-Regular";
-    text-decoration: underline;
-    text-transform: capitalize;
 }
 
 .circulo0201{
@@ -239,11 +231,11 @@
     z-index: 3;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(57, 169, 255);
+    border-color: var(--color-cuarto);
 }
 
 .circulo0202{
-    background: rgb(87, 87, 87);
+    background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
     width: 25px;
@@ -254,7 +246,7 @@
 }
 
 .circulo0203{
-    background: rgb(184, 184, 184);
+    background: var(--color-quinto);
     position: absolute;
     border-radius: 100%;
     width: 25px;
@@ -262,18 +254,6 @@
     margin-left: 48px;
     z-index: 1;
 }
-
-.colores__3{
-    position: relative;
-    /*background: red;*/
-    display: flex;
-    grid-area: colores3;
-    width: 190px;
-    height: 40px;
-    top: -40px;
-    position: relative;
-}
-
 
 .circulo0301{
     background: black;
@@ -289,7 +269,7 @@
 }
 
 .circulo0302{
-    background: rgb(87, 87, 87);
+    background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
     width: 25px;
@@ -308,29 +288,6 @@
     z-index: 1;
 }
 
-.colores__4{
-    position: relative;
-    /*background: red;*/
-    display: flex;
-    grid-area: colores4;
-    width: 190px;
-    height: 40px;
-    top: -40px;
-    position: relative;
-}
-
-.colores__4 small{
-    /*background: blue;*/
-    width: 120px;
-    margin-left: 60px;
-    margin-top: 5px;
-    text-align: center;
-    font-size: 11px;
-    font-family: "PlusJakartaSans-Regular";
-    text-decoration: underline;
-    text-transform: capitalize;
-}
-
 .circulo0401{
     background: black;
     position: absolute;
@@ -341,11 +298,11 @@
     z-index: 3;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(57, 169, 255);
+    border-color: var(--color-cuarto);
 }
 
 .circulo0402{
-    background: rgb(87, 87, 87);
+    background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
     width: 25px;
@@ -365,110 +322,110 @@
     z-index: 1;
 }
 
-.texto__01{
-    /*background: red;*/
-    grid-area: texto1;
-    margin-top: -45px;
+.circulo0501{
+    background: var(--color-primary);
+    position: absolute;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
     margin-left: 10px;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
 }
 
-.texto__01 h3{
-    /*background: green;*/
-    font-size: 16px;
-    font-family: "PlusJakartaSans-Medium";
+.circulo0502{
+    background: var(--color-terciary);
+    position: absolute;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-left: 29.5px;
+    z-index: 2;
+    
 }
 
-.texto__01 h5{
-    /*background: green;*/
-    font-size: 14px;
-    font-family: "PlusJakartaSans-SemiBold";
+.circulo0503{
+    background: green;
+    position: absolute;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-left: 48px;
+    z-index: 1;
 }
 
-.texto__01 small{
-    /*background: green;*/
-    font-size: 12px;
-    font-family: "PlusJakartaSans-Regular";
-    color: grey;
-    text-decoration: line-through;
+.circulo0601{
+    background: var(--color-secundary);
+    position: absolute;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-left: 29.5px;
+    z-index: 2;
 }
 
-.texto__02{
-    /*background: red;*/
-    grid-area: texto1;
-    margin-top: -45px;
+.circulo0602{
+    
+    background: var(--color-primary);
+    position: absolute;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
     margin-left: 10px;
+    z-index: 3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
 }
 
-.texto__02 h3{
-    /*background: green;*/
-    font-size: 16px;
-    font-family: "PlusJakartaSans-Medium";
+.circulo0603{
+    background: yellow;
+    position: absolute;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-left: 48px;
+    z-index: 1;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-cuarto);
 }
 
-.texto__02 h5{
-    /*background: green;*/
-    font-size: 14px;
-    font-family: "PlusJakartaSans-SemiBold";
-}
-
-.texto__02 small{
-    /*background: green;*/
-    font-size: 12px;
-    font-family: "PlusJakartaSans-Regular";
-    color: grey;
-    text-decoration: line-through;
-}
-
-.texto__03{
+.texto__01,
+.texto__03,
+.texto__05{
     /*background: red;*/
-    grid-area: texto1;
-    margin-top: -50px;
-    margin-left: 8px;
+    margin-top: -6.5vh;
+    margin-left: 13%;
 }
 
-.texto__03 h3{
-    /*background: green;*/
-    font-size: 16px;
-    font-family: "PlusJakartaSans-Medium";
-}
-
-.texto__03 h5{
-    /*background: green;*/
-    font-size: 14px;
-    font-family: "PlusJakartaSans-SemiBold";
-}
-
-.texto__03 small{
-    /*background: green;*/
-    font-size: 12px;
-    font-family: "PlusJakartaSans-Regular";
-    color: grey;
-    text-decoration: line-through;
-}
-
-.texto__04{
+.texto__02,
+.texto__04,
+.texto__06{
     /*background: red;*/
-    grid-area: texto1;
-    margin-top: -50px;
-    margin-left: 10px;
+    margin-top: -6.5vh;
+    margin-left: 13%;
 }
 
-.texto__04 h3{
+.texto__01 h3, .texto__02 h3, .texto__03 h3, .texto__04 h3, .texto__05 h3, .texto__06 h3{
     /*background: green;*/
-    font-size: 16px;
+    font-size: 1.9vh;
     font-family: "PlusJakartaSans-Medium";
 }
 
-.texto__04 h5{
+.texto__01 h5, .texto__02 h5, .texto__03 h5, .texto__04 h5, .texto__05 h5, .texto__06 h5{
     /*background: green;*/
-    font-size: 14px;
+    font-size: 1.5vh;
     font-family: "PlusJakartaSans-SemiBold";
 }
 
-.texto__04 small{
+.texto__01 small, .texto__02 small, .texto__03 small, .texto__04 small, .texto__05 small, .texto__06 small{
     /*background: green;*/
-    font-size: 12px;
+    font-size: 1.3vh;
     font-family: "PlusJakartaSans-Regular";
     color: grey;
     text-decoration: line-through;
 }
+
