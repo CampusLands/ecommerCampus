@@ -32,17 +32,3 @@ body {
 .header_container_titulo {
     font-size: 1.3em;
 }
-.header_container_pag {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
-
-.header_container_pag .pag_actual {
-    font-size: 1em;
-}
-
-.header_container_pag .pag_siguiente {
-    font-size: 1em;
-    color: #C0C0C0;
-}
