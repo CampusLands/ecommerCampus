@@ -1,6 +1,7 @@
 @import url(variables.css);
 :root{
     --color-primary:#fcfcfc;
+    --color-icon-primary: #21D4B4;
 }
 
 
@@ -36,7 +37,9 @@
         height: 0.5px;
         background-color: rgba(128, 128, 128, 0.5);
     }
-    
+.state_icon_ckeck{
+    color: var(--color-icon-primary)
+}
 
 
 .hidden{
