@@ -1,0 +1,41 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+}
+
+
+#contenedor-logo-inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+    background: var(--colro-crey);
+
+}
+
+
+.text{
+    /* position: absolute;
+    background: transparent;
+    z-index: 200;
+    top:47vh;
+    left: 38vw;
+    font-size: 20; */
+    transform: translate(37px,-14px);
+    font-size: 14px;
+    font-weight: 603;
+    color: var(--color-Black);
+
+}
+
+.imagen{
+  /* position: absolute;
+  background: transparent;
+  z-index: 100;
+  top: 40vh;
+  left: 20vw; */
+}
