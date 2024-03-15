@@ -20,12 +20,8 @@ body > div {
     padding: 1rem;
 }
 .card__Wishlist__ES {
-    /* display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; */
     text-align: center;
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 .img__shop {
