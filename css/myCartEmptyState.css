@@ -93,7 +93,7 @@ body>div {
         padding: 1rem 5rem; /* Ajusta el tamaño del botón */
     }
 }
-@media only screen and (min-width: 321px) and (max-width: 376px) {
+@media only screen and (min-width: 321px) and (max-width: 415px) {
     /* Ajustes específicos para dispositivos con ancho de pantalla de 321px a 375px */
     body > div {
         height: calc(100vh - 150px); /* Ajusta la altura del contenedor */
