@@ -34,7 +34,6 @@
     width: 100%;
     height: 100%;
     margin:15px auto;
-    background: var(--color-azul);
     position: fixed;
     background-color: var(--color-white);
 }
@@ -49,7 +48,7 @@
     justify-content: space-between;
     padding-right: 15px;
     padding-left: 15px;
-    background: var(--color-crey-150)
+    background: var(--color-Cyan-50);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     
@@ -76,23 +75,25 @@
     display: flex;
     font-family: "PlusJakartaSans-Bold";
     flex-direction: column;
-    gap:12px;
-    padding: 20px;
+    align-items: center;
+    gap: 7%;
+    
+    
 }
 
 .container__title p {
-    display: flex;
-    width: 90%;
+    
+    width: 80%;
     font-family: "PlusJakartaSans-Regular";
     font-size: 0.875em;
     color: var(--color-crey-150);
-    justify-content: center;
-    margin-left: 25px;
+    line-height: 150%;
     
     
 }
-.container__h1{
+.container__title h1{
     font-size: 1.5em;
+    font-family: "PlusJakartaSans-Bold";
 }
 
 .container__skip{
@@ -102,26 +103,19 @@
 
 .container__pic{
     display: flex;
+    justify-content: center;
     grid-area: img;
-    background-image: url(../storage/img/shopping.svg);
+    /* background-image: url(../storage/img/shopping.svg);
     background-position: center;
-    background-repeat: no-repeat;
-    background: var(--color-crey-150)
+    background-repeat: no-repeat; */
+    background: var(--color-Cyan-50); 
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     width:100%;
 }
 
-.container__pic img{
-   
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-}
-
 .container__title{
-    
+    padding: 5%;
     grid-area: titulo;
 }
 
@@ -130,13 +124,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     border: none;
     grid-area: boton;
+    
     
 
 }
 .container__but button  {
-   
+    margin-top: 13px;
     width: 85%;
     height: 45%;
     background-color: var(--color-Black);
@@ -145,12 +141,13 @@
     
 
 }
-
+     
 .container__but button a {
     text-decoration: none;
     color: var(--color-white);
     background: var(--color-Black);
     font-family: "PlusJakartaSans-SemiBold";
+    margin-top: 10px;
     
 
 
