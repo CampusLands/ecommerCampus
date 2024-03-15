@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    background: var(--color-primary);
+    /*ackground: var(--color-primary);*/
 }
 
 
@@ -20,6 +20,8 @@
     display: flex;
     position: fixed;
     bottom: 0;
+    z-index: 4;
+    background-color: var(--color-primary);
 }
 
 .footer_content{

@@ -9,11 +9,12 @@ body{
     background: gray;
     width: 104%;
     height: 95vh;
+    margin-top: -1.5vh;
     margin-left: -2%;
     
 }
 
-main{
+main{   
     width: 99.3%;
     margin-left: -2%;
     position: fixed;

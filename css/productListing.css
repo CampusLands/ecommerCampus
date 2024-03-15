@@ -131,21 +131,21 @@
 .reloj__1 img:first-child, .reloj__3 img:first-child, .reloj__5 img:first-child{
     width: 98%;
     height: 100%;
-    margin-top: 3vh;
+    margin-top: 5vh;
     margin-left: .5vh;
 }
 
 .reloj__2 img:first-child, .reloj__4 img:first-child, .reloj__6 img:first-child{
     width: 98%;
     height: 100%;
-    margin-top: 3vh;
+    margin-top: 5vh;
     margin-left: .5vh;
 }
 
 .reloj__1 img:last-child, .reloj__3 img:last-child, .reloj__5 img:last-child{
     width: 12%;
     position: relative;
-    top: -20vh;
+    top: -23vh;
     left: 20vh;
 
 }
@@ -153,7 +153,7 @@
 .reloj__2 img:last-child, .reloj__4 img:last-child, .reloj__6 img:last-child{
     width: 12%;
     position: relative;
-    top: -20vh;
+    top: -23vh;
     left: 20vh;
 }
 
@@ -165,10 +165,10 @@
 .colores__6{
     position: relative;
     /*background: red;*/
-    width: 190px;
-    height: 40px;
+    width: 110%;
+    height: 45%;
     margin-left: 8%;
-    top: -40px;
+    top: -50%;
     position: relative;
 }
 
@@ -182,7 +182,7 @@
     width: 8vh;
     margin-left: 45%;
     text-align: center;
-    font-size: 70%;
+    font-size: 1.5vh;
     font-family: "PlusJakartaSans-Regular";
     text-decoration: underline;
     text-transform: capitalize;
@@ -192,9 +192,9 @@
     background: black;
     position: absolute;
     border-radius: 100%;
-    width: 13%;
-    height: 65%;
-    margin-left: 10px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
     z-index: 3;
 }
 
@@ -202,9 +202,9 @@
     background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 29.5px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
     z-index: 2;
     border-width: 2px;
     border-style: solid;
@@ -215,9 +215,9 @@
     background: var(--color-terciary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 48px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
     z-index: 1;
 }
 
@@ -225,9 +225,9 @@
     background: black;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
     z-index: 3;
     border-width: 2px;
     border-style: solid;
@@ -238,9 +238,9 @@
     background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 29.5px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
     z-index: 2;
     
 }
@@ -249,9 +249,9 @@
     background: var(--color-quinto);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 48px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
     z-index: 1;
 }
 
@@ -259,9 +259,9 @@
     background: black;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
     z-index: 3;
     border-width: 2px;
     border-style: solid;
@@ -272,9 +272,9 @@
     background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 29.5px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
     z-index: 2;
 }
 
@@ -282,9 +282,9 @@
     background: #EE4D4D;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 48px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
     z-index: 1;
 }
 
@@ -292,9 +292,9 @@
     background: black;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
     z-index: 3;
     border-width: 2px;
     border-style: solid;
@@ -305,9 +305,9 @@
     background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 29.5px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
     z-index: 2;
     
 }
@@ -316,9 +316,9 @@
     background: #F0821D;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 48px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
     z-index: 1;
 }
 
@@ -326,9 +326,9 @@
     background: var(--color-primary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
     z-index: 3;
     border-width: 2px;
     border-style: solid;
@@ -339,9 +339,9 @@
     background: var(--color-terciary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 29.5px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
     z-index: 2;
     
 }
@@ -350,9 +350,9 @@
     background: green;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 48px;
+    width: 4.5vh;;
+    height: 55%;
+    margin-left: 27.5%;
     z-index: 1;
 }
 
@@ -360,9 +360,9 @@
     background: var(--color-secundary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 29.5px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 7%;
     z-index: 2;
 }
 
@@ -371,9 +371,9 @@
     background: var(--color-primary);
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 17.5%;
     z-index: 3;
     border-width: 2px;
     border-style: solid;
@@ -384,28 +384,28 @@
     background: yellow;
     position: absolute;
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    margin-left: 48px;
+    width: 4.5vh;
+    height: 55%;
+    margin-left: 27.5%;
     z-index: 1;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: var(--color-cuarto);
+    border-color: gray;
 }
 
 .texto__01,
 .texto__03,
 .texto__05{
     /*background: red;*/
-    margin-top: -6.5vh;
-    margin-left: 13%;
+    margin-top: -12.5vh;
+    margin-left: 4vh;
 }
 
 .texto__02,
 .texto__04,
 .texto__06{
     /*background: red;*/
-    margin-top: -6.5vh;
+    margin-top: -12.5vh;
     margin-left: 13%;
 }
 
@@ -423,9 +423,11 @@
 
 .texto__01 small, .texto__02 small, .texto__03 small, .texto__04 small, .texto__05 small, .texto__06 small{
     /*background: green;*/
-    font-size: 1.3vh;
+    font-size: 1.4vh;
     font-family: "PlusJakartaSans-Regular";
     color: grey;
     text-decoration: line-through;
+    margin-top: 0vh;
+    position: absolute;
 }
 
