@@ -17,7 +17,6 @@
 
 body {
     width: 100vw;
-    overflow: hidden;
 }
 
 /*Header*/
@@ -31,6 +30,7 @@ body {
     text-transform: capitalize;
     padding: 10px 20px;
     border-bottom: 1px solid var(--color-two);
+    background-color: var(--color-one);
 }
 .header img {
     width: 2em;
