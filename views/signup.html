@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <Header class="header_logo">
+        <img src="../storage/signup/quickmart.svg">
+    </Header>
+    <main>
+        <section class="main_login">
+            <h1>Signup</h1>
+            <small>Already have an account?<span style="color: cyan;">Login</span></small>
+        </section>
+        <section class="main_index">
+            <div class="form-container">
+                <form class="form">
+                  <div class="form-group">
+                    <label for="email">Full name <span style="color: red;">*</span></label>
+                    <input required="" placeholder="Enter your full name" name="email" id="email" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email <span style="color: red;">*</span></label>
+                    <input required="" placeholder="Enter your email" name="email" id="email" type="text">
+                  </div>          
+                  <div class="form-group">
+                    <label for="password">Password <span style="color: red;">*</span></label>
+                    <div class="password-input-container">
+                      <input required="" name="password" placeholder="Enter your password" id="password" type="password">
+                      <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fas fa-eye"></i></span>
+                    </div>
+                  </div>
+                  <button type="submit" class="form-submit-btn"><a href="">Continue</a></button>
+                  <button type="submit" class="form-submit-btnb">signup with Google <img src="../storage/signup/google.svg"></i></button>
+                </form>
+              </div>
+        </section>
+    </main>
+    <script>
+        function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      var togglePassword = document.querySelector(".toggle-password");
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+      } else {
+        passwordInput.type = "password";
+        togglePassword.innerHTML = '<i class="fas fa-eye"></i>';
+      }
+      }
+      </script>
+</body>
+</html>
