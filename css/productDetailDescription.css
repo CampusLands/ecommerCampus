@@ -94,7 +94,7 @@
     background: none;
     margin-top: 3%;
     width: 100%;
-    height: 4vh;
+    height: 6vh;
     display: flex;
 }
 
@@ -104,7 +104,7 @@
     justify-content: center;
     align-items: center;
     color: var(--color-primary);
-    width: 10vh;
+    width: 14vh;
     font-size: 1.4em;
     border-radius: 40px;
     margin-top: 10px;
@@ -146,7 +146,7 @@
 
 .rating{
     display: flex;
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-left: 23px;
 }
 
@@ -165,7 +165,6 @@
     font-family: "PlusJakartaSans-Regular";
     overflow-y: scroll;
     height: 20vh;
-    margin-top: 3%;
     margin-left: 23px;
     margin-right: 23px;
 }
@@ -180,7 +179,7 @@
 
 .product_Colors_Quantity{
     grid-area: colores;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-left: 23px;
 }
 
@@ -193,7 +192,7 @@
     height: 4vh;
     border-radius: 100%;
     margin-top: 3%;
-    margin-right: 3%;
+    margin-right: 10px;  
 }
 
 .product_Colors_Quantity .colors .color_1{
@@ -283,7 +282,7 @@
 .Buttons{
     grid-area: botones;
     width: 100%;
-    height: 4vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -292,7 +291,7 @@
 
 .Buttons .button_1{
     width: 15vh;
-    height: 5vh;
+    height: 7vh;
     font-size: 2em;
     border-radius: 15px;
     font-family: "PlusJakartaSans-SemiBold";
@@ -304,7 +303,7 @@
 
 .Buttons .button_2{
     width: 15vh;
-    height: 5vh;
+    height: 7vh;
     font-size: 2em;
     border-radius: 15px;
     font-family: "PlusJakartaSans-SemiBold";
@@ -330,11 +329,11 @@
     }
 
     .product_Detail .product_labels{
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .product_Detail .product_name_and_price {
-        font-size: 2.5em;
+        font-size: 3.1em;
         justify-content: space-around;
         margin-left: 0;
     }
@@ -344,23 +343,23 @@
     }
 
     .rating{
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .product_Detail .product_description .description_1, .description_2, .description_3{
-        font-size: 4em;
+        font-size: 6em;
     }
 
     .product_Colors_Quantity .title_colors{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .product_Colors_Quantity .title_Size{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .product_Colors_Quantity .Sizes{
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
 
     .product_Colors_Quantity .title_Quantity{
@@ -386,7 +385,7 @@
 
     .product_Detail .product_labels{
         width: 100%;
-        font-size: 3em;
+        font-size: 2.6em;
     }
 
     .product_labels h3:first-child{
@@ -401,10 +400,14 @@
 
     .product_Detail .product_name_and_price{
         margin-top: 5vh;
+        margin-left: 17px;
     }
 
     .rating{
-        margin-top: 5vh;
+        margin-top: 15vh;
     }
 
+    .product_Colors_Quantity .Sizes {
+        font-size: .3em;
+    }
 }

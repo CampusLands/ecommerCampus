@@ -95,7 +95,7 @@
     background: none;
     margin-top: 3%;
     width: 100%;
-    height: 4vh;
+    height: 6vh;
     display: flex;
 }
 
@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     color: var(--color-primary);
-    width: 10vh;
+    width: 16vh;
     font-size: 1.4em;
     border-radius: 40px;
     margin-top: 10px;
@@ -157,7 +157,7 @@
 
 .rating{
     display: flex;
-    margin-top: 1vh;
+    margin-top: 5vh;
     margin-left: 23px;
 }
 
@@ -175,7 +175,7 @@
 .product_description{
     font-family: "PlusJakartaSans-Regular";
     overflow-y: scroll;
-    height: 10vh;
+    height: 13vh;
     margin-top: 3%;
     margin-left: 23px;
     margin-right: 23px;
@@ -197,7 +197,7 @@
 
 .product_Colors_Quantity{
     grid-area: colores;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-left: 23px;
 }
 
@@ -210,7 +210,7 @@
     height: 4vh;
     border-radius: 100%;
     margin-top: 3%;
-    margin-right: 3%;
+    margin-right: 10px;
 }
 
 .product_Colors_Quantity .colors .color_1{
@@ -300,17 +300,17 @@
 .Buttons{
     grid-area: botones;
     width: 100%;
-    height: 4vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 8vh;
+    margin-top: 1vh;
 }
 
 .Buttons .button_1{
     width: 15vh;
-    height: 5vh;
+    height: 7vh;
     font-size: 2em;
     border-radius: 15px;
     font-family: "PlusJakartaSans-SemiBold";
@@ -322,7 +322,7 @@
 
 .Buttons .button_2{
     width: 15vh;
-    height: 5vh;
+    height: 7vh;
     font-size: 2em;
     border-radius: 15px;
     font-family: "PlusJakartaSans-SemiBold";
@@ -347,11 +347,11 @@
     }
 
     .product_Detail .product_labels{
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .product_Detail .product_name_and_price {
-        font-size: 2.5em;
+        font-size: 3.1em;
         justify-content: space-around;
         margin-left: 0;
     }
@@ -361,24 +361,23 @@
     }
 
     .rating{
-        margin-top: 3vh;
-        font-size: 2em;
+        font-size: 3em;
     }
 
-    .product_description{
-        height: 15vh;
+    .product_Detail .product_description .description_1, .description_2, .description_3{
+        font-size: 6em;
     }
 
     .product_Colors_Quantity .title_colors{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .product_Colors_Quantity .title_Size{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .product_Colors_Quantity .Sizes{
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
 
     .product_Colors_Quantity .title_Quantity{
@@ -387,10 +386,6 @@
 
     .product_Colors_Quantity .Quantity .Quantity_1{
         font-size: 1em;
-    }
-
-    .Buttons{
-        margin-top: 1vh;
     }
     
     .Buttons .button_1{
@@ -423,14 +418,16 @@
 
     .product_Detail .product_name_and_price{
         margin-top: 5vh;
+        margin-left: 6px;
     }
 
     .rating{
-        margin-top: 7vh;
+        margin-top: 15vh;
     }
 
     .product_description{
         height: 20vh;
+        font-size: 1.2em;
     }
     .product_description p{
         font-size: 3.8em;
