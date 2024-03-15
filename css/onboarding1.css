@@ -1,0 +1,169 @@
+@import url(variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    /* background: var(--color-primary); */
+}
+
+.container{
+
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(12,1fr);
+
+    grid-template-areas:
+    
+   
+    "sup sup sup sup"
+    "img img img img"
+    "img img img img"
+    "img img img img"
+    "img img img img"
+    "img img img img"
+    "titulo titulo titulo titulo"
+    "titulo titulo titulo titulo"
+    "titulo titulo titulo titulo"
+    "boton boton boton boton"
+    "boton boton boton boton"
+    "resto resto resto resto"
+    ;
+
+    width: 100%;
+    height: 100%;
+    margin:15px auto;
+    background: var(--color-azul);
+    position: fixed;
+    background-color: var(--color-white);
+}
+
+
+.container__logo{
+    grid-area: sup;
+    display: flex;
+    flex-direction: row;
+    font-family: "PlusJakartaSans-Medium";
+    font-size: 0.875em;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: var(--color-crey-150)
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    
+    
+}
+
+.container__logo img{
+   position: relative;
+   height: 100px;
+   width: 100px;
+   
+   
+}
+
+.container__logo h2{
+    display: flex;
+    font-size: 0.875em;
+    font-family: "PlusJakartaSans-Regular";
+    color: var(--color-Cyan);
+    align-items: center;
+}
+
+.container__title {
+    display: flex;
+    font-family: "PlusJakartaSans-Bold";
+    flex-direction: column;
+    gap:12px;
+    padding: 20px;
+}
+
+.container__title p {
+    display: flex;
+    width: 90%;
+    font-family: "PlusJakartaSans-Regular";
+    font-size: 0.875em;
+    color: var(--color-crey-150);
+    justify-content: center;
+    margin-left: 25px;
+    
+    
+}
+.container__h1{
+    font-size: 1.5em;
+}
+
+.container__skip{
+   
+    grid-area: arriba;
+}
+
+.container__pic{
+    display: flex;
+    grid-area: img;
+    background-image: url(../storage/img/shopping.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--color-crey-150)
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width:100%;
+}
+
+.container__pic img{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.container__title{
+    
+    grid-area: titulo;
+}
+
+.container__but{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    grid-area: boton;
+    
+
+}
+.container__but button  {
+   
+    width: 85%;
+    height: 45%;
+    background-color: var(--color-Black);
+    border-radius: 10px;;
+    font-size: 1em;
+    
+
+}
+
+.container__but button a {
+    text-decoration: none;
+    color: var(--color-white);
+    background: var(--color-Black);
+    font-family: "PlusJakartaSans-SemiBold";
+    
+
+
+}
+.container__but img{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.container__else{
+    
+    grid-area: resto;
+}
