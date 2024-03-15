@@ -1,5 +1,5 @@
 @import url(variables.css);
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 879px) {
     body {
     font-size: 14px;
     }
@@ -23,15 +23,15 @@
     flex-wrap: nowrap;
     flex-direction: row;
     align-items:center;
-    margin: 20px;
+    margin: 2vh;
 }
 .producto_1 img{
     /* background: red; */
-    width: 145px;
+    width: 20vh;
 }
 .producto_1 h2{
     display: flex;
-    font-size: medium;
+    font-size: 1.2em;
     margin-left: 10px;
 }
 .producto_1 i{
@@ -46,7 +46,7 @@
 }
 .producto_1 small{
     margin-left: 10px;
-    font-size: 1.5vh;
+    font-size: 1.6vh;
     color: gray;
 }
 .producto_1 i{
@@ -66,10 +66,10 @@
 
 }
 .container button{
-    font-size: 200%;
+    font-size: 2em;
     border: none;
     height: 1%;
-    margin: -10% auto 5% auto;
+    margin: -11% auto 5% auto;
     color: rgba(128, 128, 128, 0.295);;
 }
 .container input{
@@ -86,19 +86,20 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin: 15px;
+    margin: 2vh;
 }
 .producto_2 i{
     display: flex;
     justify-content: flex-end;
+    font-size: 1em;
 }
 .producto_2 img{
     /* /* background: red; */
-    width: 150px;
+    width: 20vh;
 }
 .producto_2 h3{
     display: flex;
-    font-size: medium;
+    font-size: 1.2em;
     margin-left: 10px;
 }
 .producto_2 p{
@@ -108,7 +109,7 @@
 }
 .producto_2 small{
     margin-left: 10px;
-    font-size: 1.7vh;
+    font-size: 1.8vh;
     color: gray;
 }
 .producto_2 i {
@@ -134,7 +135,7 @@
 
 }
 .container-2 button{
-    font-size: 200%;
+    font-size: 2em;
     border: none;
     height: 1%;
     margin: -10% auto 5% auto;
