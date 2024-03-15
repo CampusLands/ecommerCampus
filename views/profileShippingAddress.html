@@ -8,23 +8,33 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         /*modificar la posicion del cursor de texto*/
+        input[type="text"] {
+            width: 100px; /* Ancho del input */
+            padding: 0px 20px; /* Espacio interno del input */
+            font-size: 16px; /* Tamaño de la fuente */
+        }
         input[type="tel"] {
             width: 100px; /* Ancho del input */
-            padding: 0px 75px; /* Espacio interno del input */
+            padding: 0px 90px; /* Espacio interno del input */
+            font-size: 16px; /* Tamaño de la fuente */
+        }
+        input[type="number"] {
+            width: 100px; /* Ancho del input */
+            padding: 0px 20px; /* Espacio interno del input */
             font-size: 16px; /* Tamaño de la fuente */
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <i class='bx bx-arrow-back' ></i>
+        <img src="../storage/img/Line arrow-left.svg">
         <p>shipping address</p>
     </header>
     <main class="main">
         <section>
             <article class="main__top">
                 <p>full name <span style="color: red;">*</span> </p>
-                <input type="name" required name="name" id="name" class="input__name" placeholder="     Enter Full Name">
+                <input type="text" name="name" id="name" class="input__name" placeholder="Enter Full Name" required>
             </article>
         </section>
         <section>
@@ -32,7 +42,7 @@
                 <img src="../storage/img/Pakistan.svg">
                 <i class='bx bx-chevron-down'></i>
                 <p>phone number <span style="color: red;">*</span></p>
-                <input type="tel" required name="phone" id="phonenumber" class="input__phone" placeholder="+92">
+                <input type="tel" name="phone" id="phonenumber" class="input__phone" placeholder="+92" required>
             </article>
         </section>
         <section>
@@ -50,13 +60,13 @@
         <section>
             <article class="main__highbottom">
                 <p>steet address <span style="color: red;">*</span> </p>
-                <input type="text" required name="name" id="address" class="input__address" placeholder="         Enter steet addrees">
+                <input type="text" name="name" id="address" class="input__address" placeholder="Enter steet addrees" required>
             </article>
         </section>
         <section>
             <article class="main__midbottom">
                 <p>postal code <span style="color: red;">*</span> </p>
-                <input type="number" required name="name" id="code" class="input__code" placeholder="         Enter postal code">
+                <input type="number" name="name" id="code" class="input__code" placeholder="Enter postal code" required>
             </article>
             <article class="main__bottom">
                 <button class="main__button">save</button>

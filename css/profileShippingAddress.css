@@ -3,13 +3,15 @@
     --color-white:#fcfcfc;
     --color-border: rgb(236, 234, 234);
     --color-button: #000;
+    --color-input: #C0C0C0;
+    --color-border_header:#F4F5FD;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    /*background: var(--color-primary);*/
+    background: var(--color-primary);
 }
 
 body{
@@ -21,23 +23,27 @@ body{
     /*background: red;*/
     width: 100%;
     height: 10vh;
-    gap: 10px;
-    font-size: 20px;
+    gap: 15px;
     padding: 0px 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--color-border_header);
     text-transform: capitalize;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header i{
-    font-size: 30px;
+.header p{
+    font-size: 15;
+    font-family: "PlusJakartaSans-Medium";
+}
+
+.header img{
+    font-size: 20px;
 }
 
 .main{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .main__top{
@@ -48,14 +54,19 @@ body{
 }
 
 .main__top p{
+    font-family: "PlusJakartaSans-Medium";
     text-transform: capitalize;
 } 
 
 .main__top .input__name{
     width: 100%;
-    height: 7vh;
+    height: 9vh;
     border: 1px solid var(--color-border);
     border-radius: 10px;
+}
+
+.input__name::placeholder{
+    color: var(--color-input);
 }
 
 .main__lowtop{
@@ -66,26 +77,31 @@ body{
 }
 
 .main__lowtop p{
+    font-family: "PlusJakartaSans-Medium";
     text-transform: capitalize;
 } 
 
 .main__lowtop .input__phone{
     width: 100%;
-    height: 7vh;
+    height: 9vh;
     border: 1px solid var(--color-border);
     border-radius: 10px;
 }
 
+.input__phone::placeholder{
+    color: var(--color-input);
+}
+
 .main__lowtop img{
     position: absolute;
-    margin-top: 65px;
-    margin-left: 10px;
+    margin-top: 76px;
+    margin-left: 13px;
 }
 
 .main__lowtop i{
     position: absolute;
-    margin-top: 60px;
-    margin-left: 41px;
+    margin-top: 73px;
+    margin-left: 50px;
     font-size: 30px;
 }
 
@@ -101,7 +117,7 @@ body{
 .main__mid .province{
     /*background: red;*/
     width: 89%;
-    height: 7vh;
+    height: 9vh;
     padding: 0px 12px;
     border: 1px solid;
     text-transform: capitalize;
@@ -114,7 +130,7 @@ body{
 .main__mid i{
     position: absolute;
     font-size: 30px;
-    margin-top: 1.5vh;
+    margin-top: 2.5vh;
     margin-left: 38vh;
 }
 
@@ -129,7 +145,7 @@ body{
 .main__lowmid .city{
     /*background: red;*/
     width: 89%;
-    height: 7vh;
+    height: 9vh;
     padding: 0px 12px;
     border: 1px solid;
     text-transform: capitalize;
@@ -142,7 +158,7 @@ body{
 .main__lowmid i{
     position: absolute;
     font-size: 30px;
-    margin-top: 1.5vh;
+    margin-top: 2.5vh;
     margin-left: 38vh;
 }
 
@@ -154,38 +170,48 @@ body{
 }
 
 .main__highbottom p{
+    font-family: "PlusJakartaSans-Medium";
     text-transform: capitalize;
 } 
 
 .main__highbottom .input__address{
     width: 100%;
-    height: 7vh;
+    height: 9vh;
     border: 1px solid var(--color-border);
     border-radius: 10px;
+}
+
+.input__address::placeholder{
+    color: var(--color-input);
 }
 
 .main__midbottom{
     /*background: lightblue;*/
     width: 100%;
-    line-height: 40px;
+    line-height: 50px;
     padding: 0px 20px;
 }
 
 .main__midbottom p{
+    font-family: "PlusJakartaSans-Medium";
     text-transform: capitalize;
 } 
 
 .main__midbottom .input__code{
     width: 100%;
-    height: 7vh;
+    height: 9vh;
     border: 1px solid var(--color-border);
     border-radius: 10px;
+}
+
+.input__code::placeholder{
+    color: var(--color-input);
 }
 
 .main__bottom{
     /*background: lightcoral;*/
     width: 100%;
-    height: 8vh;
+    height: 9vh;
     margin-top: 20px;
     display: flex;
     justify-content: center;
