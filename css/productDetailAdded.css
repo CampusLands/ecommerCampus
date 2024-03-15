@@ -174,14 +174,13 @@
 
 .product_description{
     font-family: "PlusJakartaSans-Regular";
-    overflow-y: scroll;
-    height: 13vh;
+    height: 27vh;
     margin-top: 3%;
     margin-left: 23px;
     margin-right: 23px;
 }
 .product_description p{
-    font-size: 2vh;
+    font-size: 3vh;
     color: var(--color-grey);
 }
 .product_description p a{
