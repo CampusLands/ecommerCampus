@@ -209,7 +209,7 @@
 }
 
 .product_Colors_Quantity .colors .color_4{
-    background: var(--color-Plue);
+    background: var(--color-Blue);
 }
 
 .product_Colors_Quantity .colors .color_5{
@@ -380,4 +380,31 @@
         width: 40%;
         font-size: .9em;
     }
+}
+
+@media (width < 350px){
+
+    .product_Detail .product_labels{
+        width: 100%;
+        font-size: 3em;
+    }
+
+    .product_labels h3:first-child{
+        height: 5vh;
+        width: 20vh;
+    }
+
+    .product_labels h3:last-child{
+        height: 5vh;
+        width: 20vh;
+    }
+
+    .product_Detail .product_name_and_price{
+        margin-top: 5vh;
+    }
+
+    .rating{
+        margin-top: 5vh;
+    }
+
 }
