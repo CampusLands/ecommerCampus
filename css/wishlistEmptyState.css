@@ -34,18 +34,21 @@ margin: 0 auto;
 
 .img__shop img {
     object-fit: contain;
-    width: 275px;
-    height: 275px;
+    width: 40vh;
+    height: 40vh;
 }
 
 
 .title__card h2 {
-    font-size: 1.8rem;
+    font-size: 4vh;
     font-family: "PlusJakartaSans-ExtraBold";
     font-weight: bold;
     margin-bottom: 1.3rem;
 }
-
+.title__card{
+    width: 90%;
+    margin: 0 auto;
+}
 
 .title__card button {
     display: block;
@@ -58,7 +61,7 @@ margin: 0 auto;
 }
 
 .title__card p {
-    font-size: 1.08rem;
+    font-size: 3.5vh;
     margin: 1rem auto;
     color: rgb(119, 111, 111);
 }
@@ -68,7 +71,7 @@ margin: 0 auto;
     text-decoration: none;
     color: var(--color-primary);
     background: rgb(23, 23, 23);
-    font-size: 1rem;
+    font-size: 3vh;
 
 }
 
