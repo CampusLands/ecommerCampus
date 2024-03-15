@@ -11,57 +11,53 @@
     font-family: "PlusJakartaSans-Regular";
     background: var(--color-primary);
 }
-
-body>div {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
 }
-
-.myCartEmptyState{
+.myCartEmptyState {
     text-align: center;
-    padding-top: 15rem;
+    margin: auto;
+    height: 90vh;
+    padding-top: 18vh;
 }
 
-.img__shop{
-    display: flex;
-    justify-content: center;
-    max-width: 100%; 
-    overflow: hidden;
+.img__shop {
+    margin: auto 1rem;
 }
 
 .img__shop img {
-    max-width: 100%; /* Establece el ancho máximo de la imagen */
-    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+    object-fit: contain;
+    width: 40vh;
+    height: 40vh;
 }
 
-.title__card{
-    text-align: center;
-}
-.title__card h2{
-    font-size: 1.8rem;
+
+.title__card h2 {
+    font-size: 3vh;
     font-family: "PlusJakartaSans-ExtraBold";
     font-weight: bold;
     margin-bottom: 1.3rem;
-
+}
+.title__card{
+    width: 90%;
+    margin: 0 auto;
 }
 
-
 .title__card button {
+    display: block;
+    width: 100%;
     border: none;
     background: rgb(23, 23, 23);
-    padding: 1.2rem 7rem;
+    padding: 1rem;
     border-radius: 14px;
-    
+    margin: 0 auto;
 }
 
 .title__card p {
-    font-size: 1.08rem;
-    width: 90%;
-    margin: 0 1.5rem 2rem 1.5rem ;
+    font-size: 2.4vh;
+    margin: 1rem auto;
     color: rgb(119, 111, 111);
 }
 
@@ -70,45 +66,6 @@ body>div {
     text-decoration: none;
     color: var(--color-primary);
     background: rgb(23, 23, 23);
-    font-size: 1rem;
-    
-}
+    font-size: 3vh;
 
-@media only screen and (max-width: 320px){
-    /* Estilos para dispositivos con ancho máximo de 320px, como iPhone 5 SE */
-    body > div {
-        height: calc(100vh - 200px); /* Ajusta la altura del contenedor */
-        padding : 0.5rem; /* Ajusta el relleno */
-    }
-    .myCartEmptyState{
-        padding-top: 5rem;
-    }
-    .title__card p {
-        font-size: .8rem;
-        width: 90%;
-        margin: 0 1.5rem 2rem 1rem ;
-        color: rgb(119, 111, 111);
-    }
-    .title__card button {
-        padding: 1rem 5rem; /* Ajusta el tamaño del botón */
-    }
-}
-@media only screen and (min-width: 321px) and (max-width: 415px) {
-    /* Ajustes específicos para dispositivos con ancho de pantalla de 321px a 375px */
-    body > div {
-        height: calc(100vh - 150px); /* Ajusta la altura del contenedor */
-        padding: 1rem; /* Ajusta el relleno */
-    }
-    .myCartEmptyState{
-        padding-top: 9rem;
-    }
-    .title__card p {
-        font-size: .8rem;
-        width: 90%;
-        margin: 0 1.5rem 2rem 1rem ;
-        color: rgb(119, 111, 111);
-    }
-    .title__card button {
-        padding: 1rem 6rem; /* Ajusta el tamaño del botón */
-    }
 }
