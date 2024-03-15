@@ -27,51 +27,53 @@
 </head>
 <body>
     <header class="header">
-        <img src="../storage/img/Line arrow-left.svg">
+        <a href="#"><img src="../storage/img/Line arrow-left.svg"></a>
         <p>shipping address</p>
     </header>
     <main class="main">
-        <section>
-            <article class="main__top">
-                <p>full name <span style="color: red;">*</span> </p>
-                <input type="text" name="name" id="name" class="input__name" placeholder="Enter Full Name" required>
-            </article>
-        </section>
-        <section>
-            <article class="main__lowtop">
-                <img src="../storage/img/Pakistan.svg">
-                <i class='bx bx-chevron-down'></i>
-                <p>phone number <span style="color: red;">*</span></p>
-                <input type="tel" name="phone" id="phonenumber" class="input__phone" placeholder="+92" required>
-            </article>
-        </section>
-        <section>
-            <article class="main__mid">
-                <i class='bx bx-chevron-down'></i>
-                <div class="province">select province</div>
-            </article>
-        </section>
-        <section>
-            <article class="main__lowmid">
-                <i class='bx bx-chevron-down'></i>
-                <div class="city">select city</div>
-            </article>
-        </section>
-        <section>
-            <article class="main__highbottom">
-                <p>steet address <span style="color: red;">*</span> </p>
-                <input type="text" name="name" id="address" class="input__address" placeholder="Enter steet addrees" required>
-            </article>
-        </section>
-        <section>
-            <article class="main__midbottom">
-                <p>postal code <span style="color: red;">*</span> </p>
-                <input type="number" name="name" id="code" class="input__code" placeholder="Enter postal code" required>
-            </article>
-            <article class="main__bottom">
-                <button class="main__button">save</button>
-            </article>
-        </section>
+        <form action="">
+            <section>
+                <article class="main__top">
+                    <p>full name <span style="color: red;">*</span> </p>
+                    <input name="name" id="name" class="input__name" placeholder="Enter Full Name" type="text" required>
+                </article>
+            </section>
+            <section>
+                <article class="main__lowtop">
+                    <img src="../storage/img/Pakistan.svg">
+                    <i class='bx bx-chevron-down'></i>
+                    <p>phone number <span style="color: red;">*</span></p>
+                    <input name="phone" id="phonenumber" class="input__phone" placeholder="+92" type="tel" required>
+                </article>
+            </section>
+            <section>
+                <article class="main__mid">
+                    <i class='bx bx-chevron-down'></i>
+                    <div class="province">select province</div>
+                </article>
+            </section>
+            <section>
+                <article class="main__lowmid">
+                    <i class='bx bx-chevron-down'></i>
+                    <div class="city">select city</div>
+                </article>
+            </section>
+            <section>
+                <article class="main__highbottom">
+                    <p>steet address <span style="color: red;">*</span> </p>
+                    <input name="name" id="address" class="input__address" placeholder="Enter steet addrees" type="text" required>
+                </article>
+            </section>
+            <section>
+                <article class="main__midbottom">
+                    <p>postal code <span style="color: red;">*</span> </p>
+                    <input name="name" id="code" class="input__code" placeholder="Enter postal code" type="number" required>
+                </article>
+                <article class="main__bottom">
+                    <button class="main__button">save</button>
+                </article>
+            </section>
+        </form>
     </main>
 </body>
 </html>
