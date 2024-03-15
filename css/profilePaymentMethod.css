@@ -1,0 +1,100 @@
+@import url(variables.css);
+:root{
+    --color-primary:#6F7384;
+    --color-submit:#1C1B1B;
+    --color-letra: #fff;
+    --color-method: #F4FDFA;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-Regular";
+    /* background: var(--color-primary); */
+}
+.main{ 
+    /* background: red; */
+    padding: 0 0.8rem;
+}
+.main__title{
+    /* background: blue; */
+}
+.main__method{
+    /* background: orange; */
+    padding: 0.8rem 0;
+}
+.method__article{
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.method__article div{
+    background: var(--color-method);
+    border-radius: 15px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.main__form{
+    /* background: blue; */
+}
+.form__article{
+    /* background: violet; */
+    padding: 0.8rem 0;
+}
+.form__article form{
+    /* background: darkgoldenrod; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form__article form input[type="submit"]{
+    padding: 0.8rem;
+    border: 1px solid var(--color-submit);
+    outline: none;
+    border-radius: 5px;
+    font-family: "PlusJakartaSans-Regular";
+    color: var(--color-letra);
+    background-color: var(--color-submit);
+    text-transform: capitalize;
+}
+.from__grop{
+    /* background: red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.from__box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.from__box label{
+    /* background: darkkhaki; */
+    font-family: "PlusJakartaSans-Medium";
+    text-transform: capitalize;
+}
+.from__icon{
+    position: relative;
+}
+.from__icon img{
+    position: absolute;
+    bottom: 1.2rem;
+    right: .4rem;
+    user-select: none;
+    cursor: pointer;
+}
+.from__box input{
+    
+    padding: 0.8rem;
+    padding-right: 2rem;
+    border: 1px solid var(--color-primary);
+    outline: none;
+    border-radius: 5px;
+    font-family: "PlusJakartaSans-Regular";
+
+    text-transform: capitalize;
+}
