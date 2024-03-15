@@ -19,36 +19,50 @@ main{
     grid-template-rows: repeat(5,1fr);
     grid-template-areas: 
     "ilustra"
-    "ilustra"
-    "ilustra"
     "desicion"
     "desicion"
     ;
 }
-.o3_ilistracion{
-    grid-area: ilustra;
-
+.main__img {
+    position: relative;
+    height: 51vh;
+    margin-bottom: 2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-Cyan-50);
+    width: 100%;
+    border-radius: 20px;
+}
 
-    background: var(--color-Cyan-50);
-    border-radius: 2em;
+.main__img img{
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
+    background-color: transparent;
 }
-.o3_ilistracion img{
-    object-fit: contain;
-}
-.o3_ilistracion img:first-child{
-    height: 2em;
-    align-self: start;
 
-    padding-left: 1.5em;
+.main__icons {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 150%;
+    background-color: transparent;
 }
-.o3_ilistracion img:last-child{
-    flex-grow: 1;
-    width: 70%;
 
-    align-self: center;
+.main__icons i {
+    font-size: 2rem;
 }
+.main__icons span {
+    color: var(--color-ternary);
+}
+
 .o3_Decsion{
     grid-area: desicion;
 
@@ -59,18 +73,19 @@ main{
     gap: 1em;
 }
 .o3_Decsion h1{
-    /* width: 60%; */
     color: var(--color-Black);
-    text-align: center;
-    font-size: 32px;
+    line-height: 120%;
+    font-size: 2em;
     font-weight: bold;
+    font-family: "PlusJakartaSans-Bold";
+    text-align: center;
 }
 .o3_Decsion p{
     color: var(--color-Crey-150);
     text-align: center;
-    font-size: 14px;
-    font-weight: regular;
-    letter-spacing: 0.5%;
+    font-size: .825em;
+    line-height: 150%;
+    margin-block: 1.5rem;
 }
 .o3_Decsion_boton{
     width: 100%;
@@ -78,6 +93,10 @@ main{
     display: flex;
     gap: 1em;
 }
+.o3_Decsion_boton button a {
+    text-decoration: none;
+}
+
 button{
     width: 50%;
     height: 4em;
@@ -99,18 +118,21 @@ button:hover{
     background: var(--color-Black);
     border-color: var(--color-white);
 }
-.o3_Decsion_puntos{
+
+.main__btns {
     display: flex;
     gap: 5px;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 3rem;
 }
-.o3_Decsion_puntos span{
+
+.main__btns span{
     width: 6px;
     height: 6px;
-    background-color: var(--color-Crey-100);
+    background-color: var(--color-Crey-150);
     border-radius: 50%;
 }
-.o3_Decsion_puntos span:last-child{
-    background-color: var(--color-Green);
+
+.main__btns span:nth-child(3){
+    background-color: var(--color-Cyan);
 }

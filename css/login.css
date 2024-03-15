@@ -68,6 +68,11 @@ main {
     font-family: "PlusJakartaSans-Medium";
   }
   
+.form-container button a {
+  text-decoration: none;
+  color: var(--color-Black);
+}
+
   .password-input-container input[type="text"],
   .form-container .form-group input[type="email"], 
   .form-container .form-group input[type="password"] {

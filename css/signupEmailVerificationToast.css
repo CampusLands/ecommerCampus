@@ -42,6 +42,13 @@ header{
     border-radius: 10px;
 
 }
+
+.nav h6 {
+    font-size: .975em;
+    font-weight: regular;
+    line-height: 150%;
+}
+
 .nav__icon{
     width: 25px;
     height: 25px;
@@ -57,11 +64,17 @@ main{
     grid-area: main;
 }
 .verification__text p{
-    font-size: small;
+    font-size: .975em;
     padding-top: 6px;
     padding: 5px;
     color: var(--color-Crey-150);
 }
+.verification__text h2 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 120%;
+}
+
 .box__container{
     margin-top: 6vw;
     margin-bottom: 6vw;
@@ -82,7 +95,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-.verification__box a{ 
+.verification__box .resend_code { 
     display: flex;
     justify-content: center;
     font-size: small;
@@ -100,6 +113,12 @@ main{
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.verification__box button a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 .numbers {
     width: 100%;
     height: 50vh;

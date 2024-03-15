@@ -12,7 +12,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    background: var(--color-white);
 }
 
 .main {
@@ -29,6 +28,7 @@
     align-items: center;
     background-color: var(--color-Cyan-50);
     width: 100%;
+    border-radius: 20px;
 }
 
 .main__img img{
@@ -55,14 +55,15 @@
 .main__icons i {
     font-size: 2rem;
 }
-.main__icons span {
+.main__icons span a {
     color: var(--color-ternary);
+    text-decoration: none;
 }
 
 .main__title {
     color: var(--color-Black);
     line-height: 120%;
-    font-size: 1.5rem;
+    font-size: 2em;
     font-weight: bold;
     font-family: "PlusJakartaSans-Bold";
 }

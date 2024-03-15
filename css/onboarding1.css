@@ -1,172 +1,114 @@
-@import url(variablesAuthentication.css);
-
+@import url(variables.css);
+:root{
+    --color-white: #fff;
+    --color-Black: #1c1b1b;
+    --color-ternary: #21d4b4;
+    --color-Crey-150: #6f7384;
+    --radius:  12px;
+    --color-Cyan-50: #f4fdfa;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PlusJakartaSans-Regular";
-    /* background: var(--color-primary); */
 }
 
-.container{
+.main {
+    padding:1rem;
+    text-align: center;
+}
 
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(12,1fr);
-
-    grid-template-areas:
-    
-   
-    "sup sup sup sup"
-    "img img img img"
-    "img img img img"
-    "img img img img"
-    "img img img img"
-    "img img img img"
-    "titulo titulo titulo titulo"
-    "titulo titulo titulo titulo"
-    "titulo titulo titulo titulo"
-    "boton boton boton boton"
-    "boton boton boton boton"
-    "resto resto resto resto"
-    ;
-
+.main__img {
+    position: relative;
+    height: 51vh;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-Cyan-50);
     width: 100%;
-    height: 100%;
-    margin:15px auto;
-    background: var(--color-azul);
-    /* Color no definido por la regla  */
-    position: fixed;
-    background-color: var(--color-white);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
+.main__img img{
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
+    background-color: transparent;
+}
 
-.container__logo{
-    grid-area: sup;
+.main__icons {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
     display: flex;
-    flex-direction: row;
-    font-family: "PlusJakartaSans-Medium";
-    font-size: 0.875em;
     justify-content: space-between;
-    padding-right: 15px;
-    padding-left: 15px;
-    background: var(--color-crey-150);
-    /* Color no definido por la regla  */
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    
-    
-}
-
-.container__logo img{
-   position: relative;
-   height: 100px;
-   width: 100px;
-   
-   
-}
-
-.container__logo h2{
-    display: flex;
-    font-size: 0.875em;
-    font-family: "PlusJakartaSans-Regular";
-    color: var(--color-Cyan);
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    line-height: 150%;
+    background-color: transparent;
     align-items: center;
 }
 
-.container__title {
-    display: flex;
-    font-family: "PlusJakartaSans-Bold";
-    flex-direction: column;
-    gap:12px;
-    padding: 20px;
+.main__icons a img {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
 }
 
-.container__title p {
-    display: flex;
-    width: 90%;
-    font-family: "PlusJakartaSans-Regular";
-    font-size: 0.875em;
-    color: var(--color-crey-150);
-    /* Color no definido por la regla  */
-    justify-content: center;
-    margin-left: 25px;
-    
-    
-}
-.container__h1{
-    font-size: 1.5em;
-}
-
-.container__skip{
-   
-    grid-area: arriba;
-}
-
-.container__pic{
-    display: flex;
-    grid-area: img;
-    background-image: url(../storage/img/shopping.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background: var(--color-crey-150);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    width:100%;
-}
-
-.container__pic img{
-   
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-}
-
-.container__title{
-    
-    grid-area: titulo;
-}
-
-.container__but{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    grid-area: boton;
-    
-
-}
-.container__but button  {
-   
-    width: 85%;
-    height: 45%;
-    background-color: var(--color-Black);
-    border-radius: 10px;;
-    font-size: 1em;
-    
-
-}
-
-.container__but button a {
+.main__icons span a {
+    color: var(--color-ternary);
     text-decoration: none;
-    color: var(--color-white);
-    background: var(--color-Black);
-    font-family: "PlusJakartaSans-SemiBold";
-    
-
-
 }
-.container__but img{
+
+.main__title {
+    color: var(--color-Black);
+    line-height: 120%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "PlusJakartaSans-Bold";
+}
+
+.main__text {
+    font-size: 0.825rem;
+    color: var(--color-Crey-150);
+    margin-block: 3rem;
+    line-height: 150%;
+    font-family: "PlusJakartaSans-Regular";
+}
+
+.main__btn {
+    background-color: var(--color-Black);
+    color: var(--color-Cyan-50);
+    display: block;
+    padding-block: 1.5rem;
+    font-size: 0.825rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+}
+
+.main__btns {
     display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
-    margin-top: 40px;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-.container__else{
-    
-    grid-area: resto;
+.main__btns span{
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-Crey-150);
+    border-radius: 50%;
+}
+
+.main__btns span:nth-child(1){
+    background-color: var(--color-ternary);
 }
