@@ -17,19 +17,19 @@
     bottom: 0;
     z-index: 21;
     width: 100%; 
-    height: 27.5vh;
+    height: 31vh;
     border-radius: 27px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
 .alert p{
-    font-size: 2vh;
+    font-size: 2.7vh;
     margin: 5%;
     margin-top: 4vh;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
 }
 .alert button{
-    font-size: 1.5vh;
+    font-size: 2vh;
     border-style: none;
     width: 90%;
 }
